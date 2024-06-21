@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Impulsamos tu presencia en línea con páginas web atractivas, servicios de SEO personalizados y gestión profesional de redes sociales. Destaca en Google con nuestro enfoque integral para mejorar tu visibilidad y atraer a tu audiencia. ¡Descubre cómo podemos potenciar tu presencia digital hoy!"">
+    <meta name="keywords" content="páginas web, diseño web, desarrollo web, SEO, gestión de redes, marketing digital, presencia en línea, estrategias SEO, optimización web, redes sociales">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous" type="text/css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/kTcP8KXvLC+6yH2fF4+xx0qCzF1V5B4WBVRP6tYJ5Z6KH1+1BxZaw93Wm3JJigbWYXoJ2Awlsw1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" />
+    <link rel="stylesheet" href="publicidad.css">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <title>Posicionamiento SEO </title>
+</head>
+<body>
+    <div class="contenedor-total">   
+        <div class="contenedor-header">
+            <header>
+                <a href="index.html" onclick="seleccionar()">
+                    <div class="logo">
+                        <img src="../img/WebVisionSeo.svg" alt="Diseño pagina web" >
+                    </div>
+                </a>
+                <nav id="nav">
+                    <ul>
+                        <li><a href="../index.html" onclick="seleccionar()">Inicio</a></li>
+                        <li><a href="#" onmouseenter="mostrarSubMenu()" onmouseleave="ocultarSubMenu()">Páginas Web<i class="fas fa-chevron-down" style="margin-left: 10px; font-size: 15px; vertical-align: middle;"></i></a>
+                            <!-- Submenu -->
+                            <ul id="submenu" onmouseenter="cancelarOcultarSubMenu()" onmouseleave="ocultarSubMenu()">
+                                <li><a href="../PaginasWeb/OnePage.html">One Page</a></li>
+                                <li><a href="../PaginasWeb/sitioWeb.html">Sitio Web </a></li>
+                                <li><a href="../PaginasWeb/tiendaEnLinea.html">Tienda en Linea</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="disenoGrafico.html" onclick="seleccionar()">Diseño Gráfico</a></li>
+                        <li><a href="#" onmouseenter="mostrarSubMenu1()" onmouseleave="ocultarSubMenu1()">Marketing Digital<i class="fas fa-chevron-down" style="margin-left: 10px; font-size: 15px; vertical-align: middle;"></i></a>
+                            <!-- Submenu -->
+                            <ul id="submenu1" onmouseenter="cancelarOcultarSubMenu1()" onmouseleave="ocultarSubMenu1()">
+                                <li><a href="marketingDigital.html">Seo</a></li>
+                                <li><a href="marketingDigital.html">Sem</a></li>
+                                <li><a href="marketingDigital.html">Redes Sociales</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="paginas/nosotros.html" onclick="seleccionar()">Promociones</a></li>
+                        <div class="botones-navegacion">
+                            <a href="paginas/contacto.html"><button class="botonnav1">Contacto</button></a>
+                        </div>                                       
+                    </ul>
+                </nav>
+                <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </header>
+        </div>
+    </div> 
+    <section class="inicio-redes">
+        <div class="content">
+          <p>Haz que tu negocio llegue a todos</p>
+          <h1>Redes Sociales para impulsar tu web</h1>
+          <input type="text" name="telefono" placeholder="Pon tu nombre y teléfono">
+          <button class="boton2">Te llamamos<i class="fas fa-paper-plane" style="padding: 10px;"></i></button>
+        </div>
+      </section>
+      
+      <!-- Contenido adicional para hacer scroll -->
+      <section class="contenido-adicional">
+        <div class="video-container">
+            <div class="contenido-texto">
+                <h2 data-aos="fade-up" data-aos-delay="200" class="titulo_redes">Gestionamos tus redes</h2>
+                <p data-aos="fade-up" data-aos-delay="200" class="parrafo_redes">Instagram, Facebook, Twitter, LinkedIn… <br/>Las redes sociales más potentes del momento, <br/>de la mano de tu empresa.</p>
+              </div>
+          <!-- Aquí va tu video, puedes usar el elemento <video> -->
+          <video autoplay muted loop width="100%">
+            <source src="../img/7197432-hd_1920_1080_30fps.mp4" type="video/mp4">
+            Tu navegador no soporta el elemento de video.
+          </video>
+        </div>
+        
+      </section>
+      <section class="inicio-redes1">
+        <div class="content1">
+         
+        </div>
+      </section>
+      <section class="existe">
+        <div class="existe-content">
+          <h2 data-aos="fade-up" data-aos-delay="200" class="existe-titulo">Si no estás en redes sociales, no existes</h2>
+          <p data-aos="fade-up" data-aos-delay="200" class="existe-parrafo">Deja que nos encarguemos de que existas por encima de tu competencia.
+            Disfruta de resultados espectaculares en internet y haz que todo el mundo te vea</p>
+        </div>
+        <div class="image-container" data-aos="fade-up" data-aos-delay="200">
+            <img src="../IMG/social-networking-animate.svg" data-aos="zoom-in-up" data-aos-easing="ease-out-cubic" data-aos-delay="600" data-aos-duration="1000" alt="Descripción de la imagen">
+        </div>
+        <div class="existe-content">
+            <h2 data-aos="fade-up" data-aos-delay="200" class="existe-titulo1">Venga, vamos a hacer que hablen de tu proyecto.</h2>
+            <p data-aos="fade-up" data-aos-delay="200" class="existe-parrafo1">Publicaciones llamativas y directas al cerebro de personas que terminarán convirtiéndose en tus clientes.</p>
+          </div>
+      </section>
+      <section class="existe">
+        <div class="existe-content">
+            <div class="title-with-line" data-aos="fade-up" data-aos-delay="800">
+                <h3 class="subtitle">Haz crecer los seguidores de tus redes sociales de forma increíble y sin engaños.</h3>
+                <div class="line"></div>
+            </div>
+            <div class="title-with-line" data-aos="fade-up" data-aos-delay="800">
+                <h3 class="subtitle">Seguidores reales que interactuarán con tu negocio y que se quedarán para siempre.</h3>
+                <div class="line"></div>
+            </div>
+            <div class="title-with-line" data-aos="fade-up" data-aos-delay="800">
+                <h3 class="subtitle">Estamos atentos a lo que tus clientes te quieran decir, respondiendo de manera rápida y eficaz a todos sus mensajes.</h3>
+                <div class="line"></div>
+            </div>
+            <div class="title-with-line" data-aos="fade-up" data-aos-delay="800">
+                <h3 class="subtitle">Creamos imágenes llamativas y utilizamos los hashtags más potentes del momento para obtener grandes resultados a corto plazo.</h3>
+                <div class="line"></div>
+            </div>
+        </div>
+    </section>
+    <section class="inicio-redes2">
+        <div class="content">
+            
+            <div class="existe-content">
+                <h2 data-aos="fade-up" data-aos-delay="200" class="existe-titulo">Publicaciones programadas.</h2>
+                <p data-aos="fade-up" data-aos-delay="200" class="existe-parrafo">Establecemos una frecuencia de publicaciones óptima, según tu negocio. No dejes de lado tus redes sociales: los resultados de su buena gestión pueden llegar a ser alucinantes.</p>
+              </div>
+              <div class="existe-content">
+                  <h2 data-aos="fade-up" data-aos-delay="200" class="existe-titulo">Campañas de pago</h2>
+                  <p data-aos="fade-up" data-aos-delay="200" class="existe-parrafo">Por supuesto, también gestionamos tus campañas de pago. Si quieres ir a por todas, monitorizamos tus anuncios en todas las redes sociales que quieras para llegar a miles de personas en todo el mundo (o donde tú elijas).</p>
+                </div>
+         
+        </div>
+      </section>
+    
+    <section id="preciosseo" class="container py-5">
+        <div class="row">
+            <!-- Tarjeta Auditoría -->
+            <div class="col-lg-3 col-xs-12 mb-4" >
+                <div class="card h-100" id="tarjetas">
+                    <div class="card-header text-center">Auditoría</div>
+                    <div class="card-body">
+                        <p class="card-text text-center" id="tituloPrecio">0€</p>
+                        <p class="card-text text-center" style="font-weight: bold;color:rgb(39, 107, 210);"> Gratis </p>
+                        <ul>
+                            <li class="not-included"><span class="check">✓</span> Gestión de una red</li>
+                            <li><span class="check">✓</span>Auditoría inicial</li>
+                            <li class="not-included"><span class="check">✓</span>  Publicaciones periódicas</li>
+                            <li class="not-included"><span class="check">✓</span> Captación de fans</li>
+                            <li class="not-included"><span class="check">✓</span> Respuesta a mensajes</li>
+                            <li class="not-included"><span class="check">✓</span>  Respuesta a comentarios</li>
+                            <li class="not-included"><span class="check">✓</span> Creatividades</li>
+                            <li class="not-included"><span class="check">✓</span> Informe mensual</li>
+                            <li class="not-included"><span class="check">✓</span> Concursos</li>
+                            <li class="not-included"><span class="check">✓</span> Campañas de pago</li>
+                        </ul>
+                        <div class="text-center">
+                            <button class="btn btn-primary" id="botonPrecio">Contratar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Tarjeta Plan S -->
+            <div class="col-lg-3   col-xs-12 mb-4">
+                <div class="card h-100" id="tarjetas">
+                    <div class="card-header text-center">Plan S</div>
+                    <div class="card-body">
+                        <p class="card-text text-center" id="tituloPrecio">
+                           
+                            1499 €/año <br>
+                             
+                        </p>
+                        <p class="card-text text-center" style="font-weight: bold;color:rgb(39, 107, 210);">125 €/al mes</p>
+                        
+                        <ul>
+                            <li ><span class="check">✓</span> Gestión de una red</li>
+                            <li><span class="check">✓</span>Auditoría inicial</li>
+                            <li ><span class="check">✓</span>  Publicaciones periódicas</li>
+                            <li ><span class="check">✓</span> Captación de fans</li>
+                            <li class="not-included"><span class="check">✓</span> Respuesta a mensajes</li>
+                            <li ><span class="check">✓</span>  Respuesta a comentarios</li>
+                            <li ><span class="check">✓</span> Creatividades</li>
+                            <li ><span class="check">✓</span> Informe mensual</li>
+                            <li ><span class="check">✓</span> Concursos</li>
+                            <li class="not-included"><span class="check">✓</span> Campañas de pago</li>
+                        </ul>
+                        <div class="text-center">
+                            <button class="btn btn-primary" id="botonPrecio">Contratar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Tarjeta Plan M -->
+            <div class="col-lg-3   col-xs-12 mb-4">
+                <div class="card h-100" id="tarjetas">
+                    <div class="card-header text-center">Plan M</div>
+                    <div class="card-body">
+                        <p class="card-text text-center" id="tituloPrecio">
+                           
+                            2624 €/año
+                           
+                            
+                        </p>
+                        <p class="card-text text-center" style="font-weight: bold;color:rgb(39, 107, 210);">218 €/al mes</p>
+                        <ul>
+                            <li ><span class="check">✓</span> Gestión de dos redes</li>
+                            <li><span class="check">✓</span>Auditoría inicial</li>
+                            <li ><span class="check">✓</span>  Publicaciones periódicas</li>
+                            <li ><span class="check">✓</span> Captación de fans</li>
+                            <li ><span class="check">✓</span> Respuesta a mensajes</li>
+                            <li ><span class="check">✓</span>  Respuesta a comentarios</li>
+                            <li ><span class="check">✓</span> Creatividades</li>
+                            <li ><span class="check">✓</span> Informe mensual</li>
+                            <li ><span class="check">✓</span> Concursos</li>
+                            <li class="not-included"><span class="check">✓</span> Campañas de pago</li>
+                        </ul>
+                        <div class="text-center">
+                            <button class="btn btn-primary" id="botonPrecio">Contratar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Tarjeta Plan L -->
+            <div class="col-lg-3   col-xs-12 mb-4">
+                <div class="card h-100" id="tarjetas">
+                    <div class="card-header text-center">Plan L</div>
+                    <div class="card-body">
+                        <p class="card-text text-center" id="tituloPrecio">
+                           
+                            4499 €/año <br>
+                           
+                           
+                        </p>
+                        <p class="card-text text-center" style="font-weight: bold;color:rgb(39, 107, 210);">375 €/al mes</p>
+                        <ul>
+                            <li ><span class="check">✓</span> Gestión de tres redes</li>
+                            <li><span class="check">✓</span>Auditoría inicial</li>
+                            <li ><span class="check">✓</span>  Publicaciones periódicas</li>
+                            <li ><span class="check">✓</span> Captación de fans</li>
+                            <li ><span class="check">✓</span> Respuesta a mensajes</li>
+                            <li ><span class="check">✓</span>  Respuesta a comentarios</li>
+                            <li ><span class="check">✓</span> Creatividades</li>
+                            <li ><span class="check">✓</span> Informe mensual</li>
+                            <li ><span class="check">✓</span> Concursos</li>
+                            <li ><span class="check">✓</span> Campañas de pago</li>
+                        </ul>
+                        <div class="text-center">
+                            <button class="btn btn-primary" id="botonPrecio">Contratar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> 
+    <section class="facebook">
+        <div class="overlay">
+          <h2 data-aos="fade-up" data-aos-delay="200" class="facebook-title">Exprimimos al máximo <br/>tus redes sociales</h2>
+          <p data-aos="fade-up" data-aos-delay="200" class="facebook-text">Potenciamos tu imagen de marca de 0% a 100% .<br/> Gestionamos tus redes sociales de forma profesional, activa y dinámica.</p>
+        </div>
+      </section>
+    <section class="instragram">
+        <div class="overlay">
+          <h2 data-aos="fade-up" data-aos-delay="200" class="instragram-title">Descubre todo lo que puedes hacer con los anuncios de Instagram</h2>
+          <p data-aos="fade-up" data-aos-delay="200" class="instragram-text">Anuncia tu empresa y llega a tus futuros clientes con una segmentación precisa e insights sencillas y prácticas.</p>
+        </div>
+      </section>
+      
+    
+    <section class="preguntas">
+        <div class="faq">
+            <h2>Preguntas frecuentes</h2>
+            <ul class="pregunta">
+              <li>
+                <div class="question">
+                  <span class="toggle"></span> ¿Cómo trabajamos en WebVisionSeo?
+                </div>
+                <div class="answer">Nuestra metodología de trabajo compartida le permitirá ser el protagonista para la aprobación y el paso a siguientes fases, siempre contando con el asesoramiento de expertos en e-Commerce que le ayudarán y guiarán en todo momento para que sigas mejorando.
+        
+                   <br/><br/> Gracias a nuestro equipo de expertos con más de 10 años de experiencia, conseguiremos crear y preparar una tienda online profesional capaz de competir con las tiendas online de su sector.
+                    
+                    <br/><br/>Al inicio definimos sus requerimientos, en base a lo cual preparamos la arquitectura, el diseño y seleccionamos las tecnologías más adecuadas. Tendrá todos los detalles cuidadosamente documentados y anclado en la documentación del proyecto. En las fases individuales, le informaremos periódicamente sobre el avance del proyecto, para que usted tenga un control total sobre su avance.
+                    
+                    <br/><br/>Nos basamos en comunicación transparente, contratos claros, documentación bien definida, y en plazos de entrega firmes.
+                    
+                    <br/><br/>Para obtener más información sobre el proceso y las fases individuales, visite página de Procesos</div>
+              </li>
+              <li>
+                <div class="question">
+                  <span class="toggle"></span> ¿Necesito tener un hosting antes de empezar?
+                </div>
+                <div class="answer">No, si no tiene un hosting, haremos todo el proceso de registración un hosting y dominio con usted.</div>
+              </li>
+              <li>
+                <div class="question">
+                  <span class="toggle"></span> ¿Cómo puedo estar seguro de la calidad del trabajo?
+                </div>
+                <div class="answer" >Antes de empezar, le proporcionaremos la documentación detallada del proyecto con todos los detalles, para que pueda estar muy seguro del resultado.
+        
+                    <br/><br/>En nuestro equipo tenemos arquitectos, diseñadores, desarrolladores y testers experimentados, que van a ir muy profundo para analizar, disenar, desarrollar y verificar toda la funcionalidad, el diseño, la compatibilidad móvil y la velocidad de su sitio web.</div>
+              </li>
+              <li>
+                <div class="question">
+                  <span class="toggle"></span> ¿tienen algunas referencias?
+                </div>
+                <div class="answer">Sí, por supuesto, somos una empresa profesional con 5 años de experiencia.
+                    Entre nuestros clientes son empresas medianas, grandes e internacionales.
+                    
+                  <br/><br/>  Sobre la calidad de nuestro trabajo se puede asegurar en la sección de proyectos realizados.</div>
+              </li>
+              <li>
+                <div class="question">
+                  <span class="toggle"></span> ¿Se puede crear una web desde 0, sin utilizar un tema prediseñado de WordPress?
+                </div>
+                <div class="answer">Sí, por supuesto, para nuestros clientes estamos creando sitios web con y sin plantillas, desde 0.
+                    
+                    <br/><br/>Si necesita, nuestro equipo de diseñadores experimentados preparará un diseño profesional desde 0 y nuestro desarrollador convertirá este hermoso diseño en un gran sitio web.
+                    
+                    <br/><br/>Y si usted busca una solución más económica podemos utilizar uno de nuestros diseños pre-preparados.</div>
+              </li>
+              <li>
+                <div class="question">
+                  <span class="toggle"></span> ¿Y la velocidad de la Web?
+                </div>
+                <div class="answer">Tenemos mucha experiencia en acelerar sitios web y todas nuestras webs construimos con las tecnologías más avanzadas, para garantizar la mejor velocidad de carga posible.
+        
+                   <br/><br/> Si usted tenga problema con la velocidad de su web actual, no dude ponerse en contacto con nosotros, con mucho gusto realizamos la analisis profunda de su web, tecnologías, plugins y disenamos la solucion para mejorar la velocidad de su web actual.</div>
+              </li>
+              <li>
+                <div class="question">
+                  <span class="toggle"></span> ¿En que consiste el servicio de desarrollo e-commerce?
+                </div>
+                <div class="answer">Nuestras tiendas online están desarrolladas con una plataforma profesional que nos brinda la flexibilidad de adaptar y programar cualquier funcionalidad que necesites creando tiendas sin limitaciones para crecer.
+        
+        
+                    <br/><br/>Nuestros diseños se realizan a medida desde cero, tras escuchar las necesidades y realizar un estudio del sector del proyecto.
+                    
+                    
+                    <br/><br/>Realizamos un diseño moderno pero siempre cuidando los detalles de UX para facilitar la navegación, aumentar las conversiones y genera confianza a los clientes.
+                    
+                    <br/><br/>Todo estará adaptado para Dispositivos móviles, con lo cual diseñaremos todas las pantallas para Desktop (PC) / Tablet y Móvil.
+                    
+                    <br/><br/>A nuestros clientes ofrecemos tanto el servicio de desarrollo avanzado para gran empresas, como sitios web ecommerce básico, para las empresas que están en el proceso de creación. No dude ponerse en contacto con nuestros expertos para pedir más detalles.</div>
+              </li>
+              <li>
+                <div class="question">
+                  <span class="toggle"></span> ¿Cuanto me costará ser visible en internet?
+                </div>
+                <div class="answer">Estamos especializados en el diseño y desarrollo de sitios web de alta calidad. Por lo tanto, no tenemos precios “únicos”, sino que calculamos el presupuesto en base a las necesidades y requerimientos del cliente.
+        
+                   <br/><br/> En general, podemos ofrecerle tres tarifas para desarrollar su sitio web, en base a sus necesidades puede elegir: Básico, Avanzado o Sitio web completamente diseñado a medida.
+                    
+                   <br/><br/>El presupuesto de su proyecto depende de sus necesidades y expectativas, así como de la complejidad de la web y de las tecnologías utilizadas.
+                    
+                   <br/><br/> No facturamos horas, sino proyectos completos. Así que el precio total del proyecto completo, así como el desglose detallado del precio se preparará y formará parte del contrato antes de que empecemos con la palabra.
+                    
+                   <br/><br/> Así puede estar seguro de los costes finales del trabajo incluso antes de que empecemos.
+                    
+                   <br/><br/>El pago se realiza en dos etapas: la primera a mitad del trabajo, para que pueda ver y estar seguro de la calidad antes de enviarnos el primer pago. La segunda parte se realiza cuando el proyecto está formalmente cerrado, revisado y confirmado por su parte.
+                    
+                    No dude en ponerse en contacto con uno de nuestros amables compañeros del departamento de ventas para conocer nuestros precios.</div>
+              </li>
+              <li>
+                <div class="question">
+                  <span class="toggle"></span> ¿Necesito tener un hosting antes de empezar?
+                </div>
+                <div class="answer" >Explicación sobre los requisitos previos para comenzar un proyecto con nosotros.</div>
+              </li>
+              <li>
+                <div class="question">
+                  <span class="toggle"></span> ¿Necesito tener un hosting antes de empezar?
+                </div>
+                <div class="answer" >Explicación sobre los requisitos previos para comenzar un proyecto con nosotros.</div>
+              </li>
+              <!-- Aquí van las demás preguntas y respuestas -->
+            </ul>
+          </div>
+        </section>   
+           
+        <section class="formulario-contacto">
+            <div class="tarjeta-contacto">
+                <div class="contenido_formulario">
+                    <div class="informacion-contacto">
+                        <h2 style="color:mediumturquoise">Te asesoramos</h2>
+                        <p >Solo déjanos tu nombre y teléfono(opcional un horario)</p>
+                        <form action="https://formspree.io/f/mzbnkdze" method="POST" >
+                            <input type="text" id="nombre" name="nombre" placeholder="Nombre y teléfono">
+                            <br/>                  
+                            <button class="buttonContacto" type="submit" >Enviar</button>
+                        </form>
+                        
+                        <p >Te proporcionamos más información, despejamos dudas y entendemos mejor la idea de tu negocio.</p>
+                    </div>
+                    <div class="contacto-info">
+                        <div class="contacto-item">
+                            <i class="fas fa-phone" style="font-size: 80px; width: 83px;color:mediumturquoise"></i>                   
+                        </div>
+                        <span style="color:mediumturquoise">Teléfono: (123) 456-7890</span>
+                        <div class="contacto-item">
+                            <i class="fas fa-envelope" style="font-size: 80px; width: 83px;color:mediumturquoise"></i>
+                            
+                        </div>
+                        <span style="color:mediumturquoise">Correo: ejemplo@example.com</span>
+                       
+                        <div class="contacto-item">
+                            <i class="fab fa-whatsapp" style="font-size: 80px; width: 83px;color:mediumturquoise"></i>
+                            
+                        </div>
+                        <span style="color:mediumturquoise">WhatsApp: (123) 456-7890</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="container_footer">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h4>Site Map</h4>
+                        <ul>
+                            <li><a href="#">Inicio</a></li>
+                            <li class="submenu_footer">
+                                <a href="#">Páginas Web</a>
+                                <ul>
+                                    <li><a href="#">One Page</a></li>
+                                    <li><a href="#">Sitio Web</a></li>
+                                    <li><a href="#">Tienda en linea</a></li>
+                                   
+                                    <!-- Agrega más opciones si es necesario -->
+                                </ul>
+                            </li>
+                            <li><a href="#">Diseño Gráfico</a></li>
+                            <li><a href="#">Nosotros</a></li>
+                            <li><a href="#">Contacto</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <h4>Política de Privacidad</h4>
+                        <ul>
+                            <li><a href="#">Términos y Condiciones</a></li>
+                            <li><a href="#">Aviso Legal</a></li>
+                            <li><a href="#">Política de Cookies</a></li>
+                            <li><a href="#">Política de Privacidad</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <h4>Redes Sociales</h4>
+                        <ul>
+                            <li><a href="#">Facebook</a></li>
+                            <li><a href="#">Twitter</a></li>
+                            <li><a href="#">Instagram</a></li>
+                            <li><a href="#">LinkedIn</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+            
+        
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>        
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+    <script>
+        // Inicializar AOS con configuración para animaciones al aparecer y desaparecer
+        AOS.init({
+            duration: 1000, // Duración del efecto en milisegundos
+            once: false, // Permitir que las animaciones ocurran más de una vez
+        });
+    </script>
+        <script src="../script.js"></script> 
+        <script>
+   
+
+
+            document.addEventListener("DOMContentLoaded", function() {
+           const questions = document.querySelectorAll(".question");
+           questions.forEach(function(question) {
+             question.addEventListener("click", function() {
+               this.classList.toggle("active");
+               const answer = this.nextElementSibling;
+               answer.classList.toggle("active");
+             });
+           });
+         });
+         </script>
+       
+</body>
+</html>

@@ -1,0 +1,969 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Impulsamos tu presencia en línea con páginas web atractivas, servicios de SEO personalizados y gestión profesional de redes sociales. Destaca en Google con nuestro enfoque integral para mejorar tu visibilidad y atraer a tu audiencia. ¡Descubre cómo podemos potenciar tu presencia digital hoy!"">
+    <meta name="keywords" content="páginas web, diseño web, desarrollo web, SEO, gestión de redes, marketing digital, presencia en línea, estrategias SEO, optimización web, redes sociales">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous" type="text/css">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <title>Diseño y desarrollo web y </title>
+</head>
+
+<body>
+    <div class="contenedor-total">   
+    <div class="contenedor-header">
+        <header>
+            <a href="index.html" onclick="seleccionar()">
+                <div class="logo">
+                    <img loading="lazy" src="img/WebVisionSeo.svg" alt="Diseño pagina web" >
+                </div>
+            </a>
+            <nav id="nav">
+                <ul>
+                    <li><a href="index.html" onclick="seleccionar()">Inicio</a></li>
+                    <li><a href="#" onmouseenter="mostrarSubMenu()" onmouseleave="ocultarSubMenu()">Páginas Web<i class="fas fa-chevron-down" style="margin-left: 10px; font-size: 15px; vertical-align: middle;"></i></a>
+                        <!-- Submenu -->
+                        <ul id="submenu" onmouseenter="cancelarOcultarSubMenu()" onmouseleave="ocultarSubMenu()">
+                            <li><a href="PaginasWeb/OnePage.html">One Page</a></li>
+                            <li><a href="PaginasWeb/sitioWeb.html">Sitio Web </a></li>
+                            <li><a href="PaginasWeb/tiendaEnLinea.html">Tienda en Linea</a></li>
+                            
+                        </ul>
+                    </li>
+                    <li><a href="disenoGrafico.html" onclick="seleccionar()">Diseño Gráfico</a></li>
+                    <li><a href="#" onmouseenter="mostrarSubMenu1()" onmouseleave="ocultarSubMenu1()">Marketing Digital<i class="fas fa-chevron-down" style="margin-left: 10px; font-size: 15px; vertical-align: middle;"></i></a>
+                        <!-- Submenu -->
+                        <ul id="submenu1" onmouseenter="cancelarOcultarSubMenu1()" onmouseleave="ocultarSubMenu1()">
+                            <li><a href="Marketing/seo.html">Seo</a></li>
+                            <li><a href="marketing/redes.html">Redes Sociales</a></li>
+                            <li><a href="marketing/publicidad.html">Google Ads</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="paginas/nosotros.html" onclick="seleccionar()">Promociones</a></li>
+                    <div class="botones-navegacion">
+                        <a href="paginas/contacto.html"><button class="botonnav1">Contacto</button></a>
+                    </div>                                       
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+    </div>   
+    
+    
+    <section class="inicio" id="inicio">
+        <div class="overlay"></div> <!-- Contenedor para el filtro de color -->
+        <video autoplay muted loop id="video-background">
+            <source loading="lazy"  src="img/1110256_Animation_Stars_Earth_1920x1080.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="acerca-de">
+            <!-- Contenido de la sección "acerca-de" -->
+            <div class="containerInicio">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-md-12 col-sm-12">
+                        <div class="col-12">
+                            <h1 class="textoPortada">Tu web por solo 38€ al mes</h1>
+                            <p class="parrafoPortada">Potencia tu presencia en línea con un diseño web profesional y asequible<br/> Rellena los campos a continuación y te llamaremos para proporcionarte más información</p>
+                            <input type="text" name="nombre" placeholder="Nombre">
+                            <input type="text" name="telefono" placeholder="Teléfono">
+                            <br/>
+                            <button class="boton2">¡A toda Velocidad!<i class="fas fa-paper-plane"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+  
+    
+    <section class="contacto">
+        <div class="container-whatsapp fixed-bottom fixed-right">
+            <div class="row justify-content-center">
+                <div class="col-4 col-md-2">
+                    <a id="whatsapp" href="https://wa.me/+34618799536" target="_blank" onmouseover="showCustomTooltip()" onmouseout="hideCustomTooltip()">
+                        <img loading="lazy" src="img/whatsapp.svg" alt="WhatsApp">
+                    </a>
+                    <div id="custom-tooltip" style="visibility: hidden;">
+                        Contacta con nosotros
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<section class="que-ofrecemos">
+   
+    <div class="container"> 
+        <div class="titulo_ofrecemos-superpuesto" >
+            <h1  class="tituloTarjetas_ofrecemos "  data-aos="fade-down">¿Que te ofrecemos?</h1>
+           <!--<p class="frase_ofrecemos-superpuesta">Entre otras cosas...</p>--> 
+        </div>
+        <div class="right-content d-flex flex-column flex-sm-row flex-md-row flex-lg-row">
+            <!-- Contenido derecho con botones -->
+
+            <button id="btnOnePage" class="btn btn-primary" onclick="mostrarTexto('onePageText', 'one-page-card', 'img/content-structure-animate')" data-aos="fade-right">One Page</button>
+            <button id="btnSitioWeb" class="btn btn-primary" onclick="mostrarTexto('sitioWebText', 'sitio-web-card', 'img/design-inspiration-animate')" data-aos="fade-right">Sitio Web</button>
+            <button id="btnTiendaEnLinea" class="btn btn-primary" onclick="mostrarTexto('tiendaEnLineaText', 'tienda-en-linea-card', 'img/in-no-time-animate')" data-aos="fade-right">Tienda en línea</button>
+            <button id="btnDisenoGrafico"class="btn btn-primary" onclick="mostrarTexto('disenoGraficoText', 'diseno-grafico-card', 'img/create-animate')" data-aos="fade-right">Diseño Gráfico</button>
+            <button id="btnMarketingDigital"class="btn btn-primary" onclick="mostrarTexto('marketingDigitalText', 'marketing-digital-card', 'img/seo-animate')" data-aos="fade-right">Marketing Digital</button>
+        </div>
+    
+        <div id="onePageText" class="text-content" data-aos="fade-left">
+            <!-- Este contenido se reemplazará dinámicamente -->
+        </div>
+        <div id="sitioWebText" class="text-content" data-aos="fade-left">
+            <!-- Este contenido se reemplazará dinámicamente -->
+        </div>
+
+        <div id="tiendaEnLineaText" class="text-content" data-aos="fade-left">
+            <!-- Este contenido se reemplazará dinámicamente -->
+        </div>
+
+        <div id="disenoGraficoText" class="text-content" data-aos="fade-left">
+            <!-- Este contenido se reemplazará dinámicamente -->
+        </div>
+        <div id="marketingDigitalText" class="text-content" data-aos="fade-left">
+            <!-- Este contenido se reemplazará dinámicamente -->
+        </div>
+    </div>
+</section>
+
+<section class="como_lo_hacemos">
+    
+    <div class="contenedor text-center">
+        
+        <div class="titulo-superpuesto">
+            <h1 class="tituloTarjetas" >¿Cómo lo hacemos?</h1>
+            
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-lg-3 col-md-12 col-sm-12  mb-4">
+                <div class="tarjeta text-center">
+                    <div class="tarjeta-cuerpo">
+                        <h1 class="tarjeta-titulo">01</h1>
+                        <h2 class="tarjeta-subtitulo mb-2">Contactamos</h2>
+                        <p class="tarjeta-texto">Déjanos tus datos de contacto y te llamaremos para informarte lo antes posible</p>
+                        <img src="img/phone-calling-svgrepo-com (2).svg" alt="Icono" class="icono-final">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-12 col-sm-12 mb-4">
+                <div class="tarjeta1 text-center">
+                    <div class="tarjeta1-cuerpo">
+                        <h1 class="tarjeta1-titulo">02</h1>
+                        <h2 class="tarjeta1-subtitulo mb-2">Escuchamos</h2>
+                        <p class="tarjeta1-texto">Nos cuentas qué es lo que haces, qué es lo que te gusta y como quieres que sea tu página.</p>
+                        <img src="img/music-play-svgrepo-com.svg" alt="Icono" class="icono-final">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-12 col-sm-12 mb-4">
+                <div class="tarjeta text-center">
+                    <div class="tarjeta-cuerpo">
+                        <h1 class="tarjeta-titulo">03</h1>
+                        <h2 class="tarjeta-subtitulo mb-2">Entregamos</h2>
+                        <p class="tarjeta-texto">En solo 7 días te presentamos la 1ª versión de tu página y vemos posibles cambios.</p>
+                        <img src="img/deliver-food-svgrepo-com.svg" alt="Icono" class="icono-final">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-12 col-sm-12 mb-4">
+                <div class="tarjeta text-center">
+                    <div class="tarjeta-cuerpo">
+                        <h1 class="tarjeta-titulo">04</h1>
+                        <h2 class="tarjeta-subtitulo mb-2">Publicamos</h2>
+                        <p class="tarjeta-texto">Terminamos y publicamos la página, diseñando una versión final ¡que te encante!</p>
+                        <img src="img/web-pages-svgrepo-com.svg" alt="Icono" class="icono-final">
+                    </div>
+                </div>
+            </div>
+        </div>        
+    </div>
+   
+</section>
+<section class="fondo">
+    <div class="sesgoarriba"></div> 
+    <div class="quienessomos">    
+        <div class="contenido">            
+            <div class="izquierda">
+                <h2>WebVisonSeo</h2>
+                <p>Somos una agencia de diseño web y gráfico que impulsa a negocios pequeños y emprendedores desde el 2021. <br/>Creamos sitios web visualmente impactantes, accesibles y funcionales para una presencia efectiva en línea. Operamos de manera remota, llegando a cada rincón del país con pasión por el diseño y la innovación.
+    
+                    <br/>Nos enorgullece nuestra atención al cliente, basada en la honestidad, ética y profesionalidad. No solo entregamos un producto, sino que también colaboramos en tu éxito, brindándote las herramientas necesarias para alcanzar tus metas en el vasto universo digital.
+                    
+                    <br/><br/>¡Únete a nosotros y déjanos guiarte hacia la luz del éxito en internet!</p>
+                <button class="boton3">No lo dudes más, ¡Empieza ahora!</button>
+            </div>
+            <div class="derecha">
+                <img src="img/innovation-animate.svg" alt="Descripción de la imagen">
+            </div>
+        </div>        
+    </div> 
+    <div class="titulo-superpuesto">
+        <h1 class="tituloTarjetas">¿Por qué Contratarnos?</h1>        
+    </div>
+    <!-- Primera fila -->
+    <div class="fila row align-items-center" id="fila">
+        <div class="col-12 col-lg-6 order-2 order-lg-1 " id="izquierdaTextoFoto1" data-aos="fade-up" data-aos-delay="600">
+            <h3>Somos un socio <span class="subrayado">fuerte para su negocio</span></h3>
+            <p>Desarrolladores web experimentados, diseñadores, probadores y analistas disponibles para su negocio ahora mismo.
+                Diseñaremos, manejaremos y procederemos completamente a la digitalización de su negocio, sin importar si necesita vender en línea, presentarse en Internet o si está buscando una solución inteligente bajo demanda.</p>
+        </div>
+        <div class="col-12 col-lg-6 order-2 order-lg-1 " id="derechaFoto1" data-aos="fade-up" data-aos-delay="800">
+            <img src="img/foto1.jpg" alt="Descripción de la imagen 1">
+        </div>
+    </div>
+    
+    
+    <!-- Segunda fila -->
+    <div class="fila row align-items-center" id="fila">
+        <div class="col-12 col-lg-6 order-2 order-lg-1 " id="izquierdaFoto1">
+            <img src="img/foto2.jpg" alt="Descripción de la imagen 2" id="izquierdaFoto1">
+        </div>
+        <div class="col-12 col-lg-6 order-1 order-lg-2 " id="derechaTextoFoto1">
+
+
+            <h3 class="titulo">Un diseño <span class="subrayado">extraordinario</span></h3>
+            <p>Basándonos en sus necesidades, su negocio y sus ideas, diseñaremos una visión de futuro completa para su página web o tienda online.
+
+                <br/>A partir de nuestra experiencia aportamos las claves del éxito que garantice una página web efectiva para captar clientes.</p>
+        </div>
+    </div>
+
+     <!-- Tercera fila -->
+    <div class="fila row align-items-center" id="fila">
+        <div class="col-12 col-lg-6 order-2 order-lg-1" id="izquierdaTextoFoto1">
+            <h3>Rapidez <span class="subrayado">en todas las áreas</span></h3>
+            <p>Nos basamos en la comunicación transparente y en plazos de entrega firmes. Reaccionamos con flexibilidad ante cualquier cambio en las especificaciones por parte del cliente durante el desarrollo del proyecto.
+                <br/>Cada proyecto está dirigido por un manager de proyecto que lo supervisa, garantiza el control, e informa regularmente del estado del desarrollo.
+            </p>
+        </div>
+        <div class="col-12 col-lg-6 order-2 order-lg-1 " id="derechaFoto1">
+            <img src="img/foto3.jpg" alt="Descripción de la imagen 1">
+        </div>
+    </div>
+    
+    
+    <!-- Cuarta fila -->
+    <div class="fila row align-items-center" id="fila">
+        <div class="col-12 col-lg-6 order-2 order-lg-1" id="izquierdaFoto1">
+            <img src="img/foto4.jpg" alt="Descripción de la imagen 2">
+        </div>
+        <div class="col-12 col-lg-6 order-1 order-lg-2" id="derechaTextoFoto1">
+
+
+            <h3>Un buen posicionamiento <span class="subrayado">en buscadores</span> </h3>
+            <p>Su página web estará preparada para comunicarse con todos los motores de búsqueda actuales de Google, a través de enlaces de búsqueda locales. Incluimos inteligencia artificial, para informarle si el texto de su sitio necesita modificaciones para mejorar la publicación de búsqueda.</p>
+        </div>
+    </div>
+
+    <!-- Quinta fila -->
+    <div class="fila row align-items-center" id="fila">
+        <div class="col-12 col-lg-6 order-2 order-lg-1" id="izquierdaTextoFoto1">
+            <h3>100% <span class="subrayado">compatibles con móviles y tablets</span></h3>
+            <p>Hoy la mitad del tráfico online pasa por dispositivos móviles y tablets. Somos conscientes de ello, por lo que preparamos páginas web y tiendas online 100% compatibles con todos los navegadores móviles. Cuando vean su tienda en dispositivos móviles, los usuarios tendrán una experiencia única de diseño web en móvil, velocidad y ergonomía.</p>
+        </div>
+        <div class="col-12 col-lg-6 order-2 order-lg-1 " id="derechaFoto1" >
+            <img src="img/mejor-empresa-de-diseno-a-medida-espana.gif" alt="Descripción de la imagen 1">
+        </div>
+    </div>
+    
+    
+    <!-- Sexta fila -->
+    <div class="fila row align-items-center" id="fila">
+        <div class="col-12 col-lg-6 order-2 order-lg-1" id="izquierdaFoto1">
+            <img src="img/foto6.jpg" alt="Descripción de la imagen 2">
+        </div>
+        <div class="col-12 col-lg-6 order-1 order-lg-2" id="derechaTextoFoto1">
+
+
+            <h3>Diseñado <span class="subrayado">a medida</span></h3>
+            <p>Le preparamos la arquitectura de su futuro sitio web y le daremos tiempo para revisarla con cuidado. Incorporaremos todos sus comentarios para que la maquetación del sitio web se corresponda con sus ideas y requerimientos.
+
+                <br/>Pasaremos la arquitectura final del sitio web a nuestros diseñadores, quienes prepararán un diseño único y original desde cero, para que cada parte de la web cumpla de altos requisitos y expectativas de nuestros clientes.
+                <br/>Se le presentarán las propuestas de diseño e incorporaremos todos sus requisitos y comentarios antes de la finalización.</p>
+            </div>
+    </div>
+    
+  <div class="sesgoabajo-unico"></div>  
+</section>
+
+<section class="fondo1">
+    <div class="titulo1-superpuesto">
+        <h1 class="tituloTarjetas1 display-1" style="font-size: 100px;">Que incluyen nuestras webs</h1>
+       
+    </div>
+    <div class="container">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 ">
+            <!-- Tarjeta 1 -->
+        
+                <div class="card">
+                    <!-- Contenido de la tarjeta 1 -->
+                    <div class="card-body flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-back">
+                                <p>El primer año es gratuito al comprar tu web. Después, puedes renovarlo con nosotros o con quien quieras.</p>
+                                <!-- Agrega aquí tu botón -->
+                                
+                            </div>
+                            <div class="flip-card-front">
+                                <!-- Contenido de la parte trasera de la tarjeta (imagen u otro contenido) -->                       
+                                <img src="img/domain-registration-svgrepo-com.svg" alt="Icono de dominio">
+                                <h5>Dominio</h5>                                
+                            </div>                      
+                        </div>
+                    </div>
+                </div>
+            
+            <!-- Tarjeta 2 -->
+            
+                <div class="card">
+                    <!-- Contenido de la tarjeta 2 -->
+                    <div class="card-body flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-back">
+                                <p> Incluido con tu página web el primer año. Después, puedes renovarlo con nosotros o con quien quieras.</p>
+                                <!-- Agrega aquí tu botón -->
+                            </div>
+                            <div class="flip-card-front">
+                                <!-- Contenido de la parte trasera de la tarjeta (imagen u otro contenido) --> 
+                                <img src="img/cloud-computing-servers-svgrepo-com.svg" alt="Icono de dominio">                      
+                                <h5>Hosting</h5>
+                            </div>                      
+                        </div>
+                    </div>
+                </div>
+            
+            <!-- Tarjeta 3 -->
+            
+                <div class="card">
+                    <!-- Contenido de la tarjeta 3 -->
+                    <div class="card-body flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-back">
+                                <p>Evita aparecer como “página no segura” y consigue la confianza de tus clientes con una página web con encriptación SSL. </p>
+                                <!-- Agrega aquí tu botón -->
+                            </div>
+                            <div class="flip-card-front">
+                                <!-- Contenido de la parte trasera de la tarjeta (imagen u otro contenido) -->                       
+                                <img src="img/security-system-lock-svgrepo-com.svg" alt="Icono de dominio">
+                                <h5>Certificado ssl</h5>                                      
+                            </div>                      
+                        </div>
+                    </div>
+                </div>
+        
+            <!-- Tarjeta 4 -->
+            
+                <div class="card">
+                    <!-- Contenido de la tarjeta 4 -->
+                    <div class="card-body flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-back">
+                                <p>Podrás editar textos e imágenes por ti mismo fácilmente. También gestionar los productos de tu tienda online.</p>
+                                <!-- Agrega aquí tu botón -->
+                            </div>
+                            <div class="flip-card-front">
+                                <!-- Contenido de la parte trasera de la tarjeta (imagen u otro contenido) -->                       
+                                <img src="img/edit-user-left-svgrepo-com.svg" alt="Icono de dominio">
+                                <h5>Autogestionable</h5>                                      
+                            </div>                      
+                        </div>
+                    </div>
+                </div>
+            
+            <!-- Tarjeta 5 -->
+            
+                <div class="card">
+                    <!-- Contenido de la tarjeta 5 -->
+                    <div class="card-body flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-back">
+                                <p>Por si metes la pata haciendo cambios, todo tiene arreglo. </p>
+                                <!-- Agrega aquí tu botón -->
+                            </div>
+                            <div class="flip-card-front">
+                                <!-- Contenido de la parte trasera de la tarjeta (imagen u otro contenido) -->                       
+                                <img src="img/copy-course-svgrepo-com (1).svg" alt="Icono de dominio">
+                                <h5>Copia de seguridad</h5>                                      
+                            </div>                      
+                        </div>
+                    </div>
+                </div>
+            
+            <!-- Tarjeta 6 -->
+            
+                <div class="card">
+                    <!-- Contenido de la tarjeta 6 -->
+                    <div class="card-body flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-back">
+                                <p>Usa un correo electrónico profesional para atender a tus clientes. </p>
+                                <!-- Agrega aquí tu botón -->
+                            </div>
+                            <div class="flip-card-front">
+                                <!-- Contenido de la parte trasera de la tarjeta (imagen u otro contenido) -->                                                           
+                                <img src="img/email-18-svgrepo-com.svg" alt="Icono de dominio">
+                                <h5>Cuentas de Correo</h5>
+                            </div>                      
+                        </div>
+                    </div>
+                </div>
+            
+            <!-- Tarjeta 7 -->
+            
+                <div class="card">
+                    <!-- Contenido de la tarjeta 7 -->
+                    <div class="card-body flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-back">
+                                <p>Si tu negocio crece o piensas que te has quedado corto con tu página, podemos ampliarla en cualqueir momento. </p>
+                                <!-- Agrega aquí tu botón -->
+                            </div>
+                            <div class="flip-card-front">
+                                <!-- Contenido de la parte trasera de la tarjeta (imagen u otro contenido) -->                                                                                                                                                     
+                                <img src="img/expand-alt-1-svgrepo-com.svg" alt="Icono de dominio">
+                                <h5>Ampliable</h5>
+                            </div>                      
+                        </div>
+                    </div>
+                </div>
+            
+            <!-- Tarjeta 8 -->
+            
+                <div class="card">
+                    <!-- Contenido de la tarjeta 8 -->
+                    <div class="card-body flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-back">
+                                <p>Solucionamos las dudas que te surjan en el manejo de tu página. Si necesitas cambios, cuentas con varias revisiones gratuitas.</p>
+                                <!-- Agrega aquí tu botón -->
+                            </div>
+                            <div class="flip-card-front">
+                                <!-- Contenido de la parte trasera de la tarjeta (imagen u otro contenido) -->                                                                    
+                                <img src="img/customer-support-help-service-svgrepo-com.svg" alt="Icono de dominio">
+                                <h5>Soporte</h5>                                  
+                            </div>                      
+                        </div>
+                    </div>
+                </div>
+            
+            <!-- Tarjeta 9 -->
+            
+                <div class="card">
+                    <!-- Contenido de la tarjeta 9 -->
+                    <div class="card-body flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-back">
+                                <p>Optimizamos tu web para que tengas una buena posición en las búsquedas de Google. </p>
+                                <!-- Agrega aquí tu botón -->
+                            </div>
+                            <div class="flip-card-front">
+                                <!-- Contenido de la parte trasera de la tarjeta (imagen u otro contenido) -->                                                                        
+                                <img src="img/seo-1-svgrepo-com.svg" alt="Icono de dominio">
+                                <h5>Optimizada para SEO</h5>                                  
+                            </div>                      
+                        </div>
+                    </div>
+                </div>
+            
+            <!-- Tarjeta 10 -->
+            
+                <div class="card">
+                    <!-- Contenido de la tarjeta 10 -->
+                    <div class="card-body flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-back">
+                                <p> Con WordPress, además de tener la plataforma más usada, no tendrás problema si quieres migrar tu página. </p>
+                                <!-- Agrega aquí tu botón -->
+                            </div>
+                            <div class="flip-card-front">
+                                <!-- Contenido de la parte trasera de la tarjeta (imagen u otro contenido) -->                       
+                                <img src="img/wordpress-svgrepo-com.svg" alt="Icono de dominio">
+                                <h5>Instalación Wordpress</h5>                                  
+                            </div>                      
+                        </div>
+                    </div>
+                </div>
+        
+            <!-- Tarjeta 11 -->
+            
+                <div class="card">
+                    <!-- Contenido de la tarjeta 11 -->
+                    <div class="card-body flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-back">
+                                <p>Tu página se visualizará perfectamente tanto en pantallas de ordenador como en tablets o móviles. </p>
+                                <!-- Agrega aquí tu botón -->
+                            </div>
+                            <div class="flip-card-front">
+                                <!-- Contenido de la parte trasera de la tarjeta (imagen u otro contenido) -->                                                                        
+                                <img src="img/devices-svgrepo-com.svg" alt="Icono de dominio">
+                                <h5>Adaptada a Dispositivos</h5>                                  
+                            </div>                      
+                        </div>
+                    </div>
+                </div>
+            
+            <!-- Tarjeta 12 -->
+        
+                <div class="card">
+                    <!-- Contenido de la tarjeta 12 -->
+                    <div class="card-body flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-back">
+                                <p>Cada trimestre te enviamos un informe con el tráfico de tu página: procedencia de las visitas, páginas más vistas, etc. </p>
+                                <!-- Agrega aquí tu botón -->
+                            </div>
+                            <div class="flip-card-front">
+                                <!-- Contenido de la parte trasera de la tarjeta (imagen u otro contenido) -->                                                                        
+                                <img src="img/report-svgrepo-com.svg" alt="Icono de dominio">
+                                <h5>Informe detallado Trimestral</h5>                                  
+                            </div>                      
+                        </div>
+                    </div>
+                </div>
+    </div>
+    <div class="sesgoabajo1-unico"></div> 
+</section>
+
+<section class="tarifas">
+    <div class="contenedor text-center" style="background: linear-gradient(to bottom, rgba(146, 32, 154, 0.565), #43207c);">
+        <div class="titulo-superpuesto">
+            <h1 class="titulo-tarifas display-1">Elige el Plan</h1>
+            <p class="frase-superpuesta">A tu medida</p>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-lg-4 col-md-12 col-sm-12  mb-4">
+                <div class="tarjeta-precios text-center">
+                    <div class="tarjeta-precios-cuerpo">
+                        <h1 class="tarjeta-precios-titulo">One page</h1>
+                        <p class="tarjeta-precios-titulobajo">1 año</p>
+                        <h2 class="tarjeta-precios-subtitulo mb-2">
+                            <span class="numero-precio">38</span>
+                            <span style=" color: #27d0e3;">€/al mes</span>
+                        </h2>
+                        
+                        <p class="tarjeta-precios-texto">1 sola página</p>
+            
+                        <!-- Lista de características -->
+                        <ul class="caracteristicas">
+                            <li>Dominio y hosting gratis 1 año</li>
+                            <li>Certificado de seguridad SSL</li>
+                            <li>Autogestionable</li>
+                            <li>Instalación de WordPress</li>
+                            <li>Copia de seguridad semanal</li>
+                            <li>Informe trimestral de visitas</li>
+                            <li>Instalación gratuita de plugins de seguridad, seguimiento y posicionamiento</li>
+                            <li>Cuentas de correo electrónico ilimitadas</li>
+                            <li>Optimizada a tablets y móviles</li>
+                            <li>2 Revisiones o ampliaciones</li>
+                            <li>Soporte gratuito 6 meses</li>
+                            <li>Entrega en máximo 2 semanas</li>
+                        </ul>
+            
+                        <!-- Botón de compra -->
+                        <button class="btn-comprar">Quiero esta</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-12 col-sm-12  mb-4">
+                <div class="tarjeta-precios text-center">
+                    <div class="tarjeta-precios-cuerpo">
+                        <h1 class="tarjeta-precios-titulo">Sitio Web</h1>
+                        <p class="tarjeta-precios-titulobajo">1 año</p>
+                        <h2 class="tarjeta-precios-subtitulo mb-2">
+                            <span class="numero-precio">45</span>
+                            <span style=" color: #27d0e3;">€/al mes</span>
+                        </h2>
+                        
+                        <p class="tarjeta-precios-texto">Hasta 20 páginas</p>
+            
+                        <!-- Lista de características -->
+                        <ul class="caracteristicas">
+                            <li>Dominio y hosting gratis 1 año</li>
+                            <li>Certificado de seguridad SSL</li>
+                            <li>Autogestionable</li>
+                            <li>Instalación de WordPress</li>
+                            <li>Copia de seguridad semanal</li>
+                            <li>Informe trimestral de visitas</li>
+                            <li>Instalación gratuita de plugins de seguridad, seguimiento y posicionamiento</li>
+                            <li>Cuentas de correo electrónico ilimitadas</li>
+                            <li>Optimizada a tablets y móviles</li>
+                            <li>4 Revisiones o ampliaciones</li>
+                            <li>Soporte gratuito 1 año</li>
+                            <li>Entrega en máximo 3/4 semanas</li>
+                        </ul>
+            
+                        <!-- Botón de compra -->
+                        <button class="btn-comprar">Quiero esta</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-12 col-sm-12  mb-4">
+                <div class="tarjeta-precios text-center">
+                    <div class="tarjeta-precios-cuerpo">
+                        <h1 class="tarjeta-precios-titulo">Tienda Online</h1>
+                        <p class="tarjeta-precios-titulobajo">1 año</p>
+                        <h2 class="tarjeta-precios-subtitulo mb-2">
+                            <span class="numero-precio">55</span>
+                            <span style=" color: #27d0e3;">/al mes</span>
+                        </h2>
+                        
+                        <p class="tarjeta-precios-texto">Hasta 20 página</p>
+            
+                        <!-- Lista de características -->
+                        <ul class="caracteristicas">
+                            <li>Dominio y hosting gratis 1 año</li>
+                            <li>Certificado de seguridad SSL</li>
+                            <li>Autogestionable</li>
+                            <li>Instalación de WordPress</li>
+                            <li>Copia de seguridad semanal</li>
+                            <li>Informe trimestral de visitas</li>
+                            <li>Instalación gratuita de plugins de seguridad, seguimiento y posicionamiento</li>
+                            <li>Cuentas de correo electrónico ilimitadas</li>
+                            <li>Optimizada a tablets y móviles</li>
+                            <li>4 Revisiones o ampliaciones</li>
+                            <li>Soporte gratuito 1 año</li>
+                            <li>Entrega en máximo 5/6 semanas</li>
+                        </ul>
+            
+                        <!-- Botón de compra -->
+                        <button class="btn-comprar">Quiero esta</button>
+                    </div>
+                </div>
+            </div>                       
+        </div>
+        <h2 class="titulo-sin-complicarte display-3">Sin Complicarte</h2>
+        <div class="row justify-content-center">
+            <!-- Primera tarjeta rectangular -->
+            <div class="col-lg-6 col-md-12 col-sm-12 mb-4">
+                <div class="tarjeta-rectangular text-center">
+                    <div class="icono-tarjeta">
+                        <!-- Icono -->
+                        <img src="img/written-page-svgrepo-com.svg" alt="Icono" class="icono">
+                    </div>
+                    <h3 class="titulo-tarjeta-tarifa">REDACCIÓN DE TEXTOS</h3>
+                    <p class="texto-tarjeta-tarifa">Si aún no tienes los textos para el contenido de tu página o no tienes tiempo, no te preocupes, nos encargamos de todo.</p>
+                </div>
+                </div>
+            
+            <!-- Segunda tarjeta rectangular -->
+            <div class="col-lg-6 col-md-12 col-sm-12 mb-4">
+                <div class="tarjeta-rectangular text-center">
+                    <div class="icono-tarjeta">
+                        <!-- Icono -->
+                        <img src="img/image-camera-gadget-picture-photo-svgrepo-com.svg" alt="Icono" class="icono">
+                    </div>
+                    <h3 class="titulo-tarjeta-tarifa">IMAGENES DE CALIDAD</h3>
+                    <p class="texto-tarjeta-tarifa">Te incluimos gratis un paquete de imágenes de calidad para tu página web o proyecto de diseño gráfico.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="mantenimiento-seccion" id="mantenimiento-seccion">
+    <div class="overlay-mantenimiento"></div>
+    <div class="mantenimiento-container">
+        <div class="mantenimiento-row row"> <!-- Agregado el contenedor de fila -->
+            <!-- Columna de la imagen -->
+            <div class="col-lg-6 col-md-12 col-xs-12 mantenimiento-imagen-container">
+                <div class="mantenimiento-textos">
+                    <h1 class="mantenimiento-subtitulo">Servicios de Mantenimiento Integral</h1>
+                    <button class="boton-mantenimiento" onclick="window.location.href = 'mantenimiento/mantenimiento.html';">Mira nuestros precios de mantenimiento web</button>
+
+                </div>
+                
+            </div>
+            
+            <!-- Columna del texto -->
+            <div class="col-lg-6 col-md-12 col-xs-12">
+                <div class="mantenimiento-textos">
+                   
+                    <p class="mantenimiento-p">Mantenimiento web, soporte técnico, gestión de dominios y hosting.</p>
+                    <p class="mantenimiento-p">Nos preocupamos del buen funcionamiento de tu web para que puedas dedicarte a tu negocio.</p>
+                    
+                    <p class="mantenimiento-p"><strong>Si tienes alguno de estos problemas, necesitas contactar con nosotros:</strong></p>
+                    <ul class="mantenimiento-lista">
+                        <li>Problemas de dominios</li>
+                        <li>Problemas de alojamiento</li>
+                        <li>Soporte técnico para la web</li>
+                        <li>Servidores y Páginas Web lentas</li>
+                        <li>Spam en cuentas de correo electrónico</li>
+                        <li>Comenzaste tu web y no sabes cómo acabar</li>
+                        <li>Has perdido la confianza en tu diseñador web</li>
+                        <li>Actualización Pop up cookies para cumplir con normativa</li>
+                    </ul>
+                    
+                   
+                </div>
+                
+                <div class="mantenimiento-sesgoabajo"></div>
+            </div>
+        </div>
+      
+            <!-- Columna de la imagen -->
+           
+            <!-- Columna del texto y botón -->
+           
+        
+    </div>
+    <div class="col-lg-12 col-md-12 col-xs-12">
+        <div class="texto-boton">
+            <p>Mantenimiento basic <span class="textoPasarela">GRATIS</span> el primer año , si contratas una Web</p>
+           
+        </div>
+    </div>
+</section>
+
+
+
+
+
+<section class="preguntas">
+<div class="faq">
+    <h2>Preguntas frecuentes</h2>
+    <ul class="pregunta">
+      <li>
+        <div class="question">
+          <span class="toggle"></span> ¿Cómo trabajamos en WebVisionSeo?
+        </div>
+        <div class="answer">Nuestra metodología de trabajo compartida le permitirá ser el protagonista para la aprobación y el paso a siguientes fases, siempre contando con el asesoramiento de expertos en e-Commerce que le ayudarán y guiarán en todo momento para que sigas mejorando.
+
+           <br/><br/> Gracias a nuestro equipo de expertos con más de 10 años de experiencia, conseguiremos crear y preparar una tienda online profesional capaz de competir con las tiendas online de su sector.
+            
+            <br/><br/>Al inicio definimos sus requerimientos, en base a lo cual preparamos la arquitectura, el diseño y seleccionamos las tecnologías más adecuadas. Tendrá todos los detalles cuidadosamente documentados y anclado en la documentación del proyecto. En las fases individuales, le informaremos periódicamente sobre el avance del proyecto, para que usted tenga un control total sobre su avance.
+            
+            <br/><br/>Nos basamos en comunicación transparente, contratos claros, documentación bien definida, y en plazos de entrega firmes.
+            
+            <br/><br/>Para obtener más información sobre el proceso y las fases individuales, visite página de Procesos</div>
+      </li>
+      <li>
+        <div class="question">
+          <span class="toggle"></span> ¿Necesito tener un hosting antes de empezar?
+        </div>
+        <div class="answer">No, si no tiene un hosting, haremos todo el proceso de registración un hosting y dominio con usted.</div>
+      </li>
+      <li>
+        <div class="question">
+          <span class="toggle"></span> ¿Cómo puedo estar seguro de la calidad del trabajo?
+        </div>
+        <div class="answer" >Antes de empezar, le proporcionaremos la documentación detallada del proyecto con todos los detalles, para que pueda estar muy seguro del resultado.
+
+            <br/><br/>En nuestro equipo tenemos arquitectos, diseñadores, desarrolladores y testers experimentados, que van a ir muy profundo para analizar, disenar, desarrollar y verificar toda la funcionalidad, el diseño, la compatibilidad móvil y la velocidad de su sitio web.</div>
+      </li>
+      <li>
+        <div class="question">
+          <span class="toggle"></span> ¿tienen algunas referencias?
+        </div>
+        <div class="answer">Sí, por supuesto, somos una empresa profesional con 5 años de experiencia.
+            Entre nuestros clientes son empresas medianas, grandes e internacionales.
+            
+          <br/><br/>  Sobre la calidad de nuestro trabajo se puede asegurar en la sección de proyectos realizados.</div>
+      </li>
+      <li>
+        <div class="question">
+          <span class="toggle"></span> ¿Se puede crear una web desde 0, sin utilizar un tema prediseñado de WordPress?
+        </div>
+        <div class="answer">Sí, por supuesto, para nuestros clientes estamos creando sitios web con y sin plantillas, desde 0.
+            
+            <br/><br/>Si necesita, nuestro equipo de diseñadores experimentados preparará un diseño profesional desde 0 y nuestro desarrollador convertirá este hermoso diseño en un gran sitio web.
+            
+            <br/><br/>Y si usted busca una solución más económica podemos utilizar uno de nuestros diseños pre-preparados.</div>
+      </li>
+      <li>
+        <div class="question">
+          <span class="toggle"></span> ¿Y la velocidad de la Web?
+        </div>
+        <div class="answer">Tenemos mucha experiencia en acelerar sitios web y todas nuestras webs construimos con las tecnologías más avanzadas, para garantizar la mejor velocidad de carga posible.
+
+           <br/><br/> Si usted tenga problema con la velocidad de su web actual, no dude ponerse en contacto con nosotros, con mucho gusto realizamos la analisis profunda de su web, tecnologías, plugins y disenamos la solucion para mejorar la velocidad de su web actual.</div>
+      </li>
+      <li>
+        <div class="question">
+          <span class="toggle"></span> ¿En que consiste el servicio de desarrollo e-commerce?
+        </div>
+        <div class="answer">Nuestras tiendas online están desarrolladas con una plataforma profesional que nos brinda la flexibilidad de adaptar y programar cualquier funcionalidad que necesites creando tiendas sin limitaciones para crecer.
+
+
+            <br/><br/>Nuestros diseños se realizan a medida desde cero, tras escuchar las necesidades y realizar un estudio del sector del proyecto.
+            
+            
+            <br/><br/>Realizamos un diseño moderno pero siempre cuidando los detalles de UX para facilitar la navegación, aumentar las conversiones y genera confianza a los clientes.
+            
+            <br/><br/>Todo estará adaptado para Dispositivos móviles, con lo cual diseñaremos todas las pantallas para Desktop (PC) / Tablet y Móvil.
+            
+            <br/><br/>A nuestros clientes ofrecemos tanto el servicio de desarrollo avanzado para gran empresas, como sitios web ecommerce básico, para las empresas que están en el proceso de creación. No dude ponerse en contacto con nuestros expertos para pedir más detalles.</div>
+      </li>
+      <li>
+        <div class="question">
+          <span class="toggle"></span> ¿Cuanto me costará ser visible en internet?
+        </div>
+        <div class="answer">Estamos especializados en el diseño y desarrollo de sitios web de alta calidad. Por lo tanto, no tenemos precios “únicos”, sino que calculamos el presupuesto en base a las necesidades y requerimientos del cliente.
+
+           <br/><br/> En general, podemos ofrecerle tres tarifas para desarrollar su sitio web, en base a sus necesidades puede elegir: Básico, Avanzado o Sitio web completamente diseñado a medida.
+            
+           <br/><br/>El presupuesto de su proyecto depende de sus necesidades y expectativas, así como de la complejidad de la web y de las tecnologías utilizadas.
+            
+           <br/><br/> No facturamos horas, sino proyectos completos. Así que el precio total del proyecto completo, así como el desglose detallado del precio se preparará y formará parte del contrato antes de que empecemos con la palabra.
+            
+           <br/><br/> Así puede estar seguro de los costes finales del trabajo incluso antes de que empecemos.
+            
+           <br/><br/>El pago se realiza en dos etapas: la primera a mitad del trabajo, para que pueda ver y estar seguro de la calidad antes de enviarnos el primer pago. La segunda parte se realiza cuando el proyecto está formalmente cerrado, revisado y confirmado por su parte.
+            
+            No dude en ponerse en contacto con uno de nuestros amables compañeros del departamento de ventas para conocer nuestros precios.</div>
+      </li>
+      <li>
+        <div class="question">
+          <span class="toggle"></span> ¿Necesito tener un hosting antes de empezar?
+        </div>
+        <div class="answer" >Explicación sobre los requisitos previos para comenzar un proyecto con nosotros.</div>
+      </li>
+      <li>
+        <div class="question">
+          <span class="toggle"></span> ¿Necesito tener un hosting antes de empezar?
+        </div>
+        <div class="answer" >Explicación sobre los requisitos previos para comenzar un proyecto con nosotros.</div>
+      </li>
+      <!-- Aquí van las demás preguntas y respuestas -->
+    </ul>
+  </div>
+</section>   
+   
+<section class="formulario-contacto">
+    <div class="tarjeta-contacto">
+        <div class="contenido_formulario">
+            <div class="informacion-contacto">
+                <h2 style="color:mediumturquoise">Te asesoramos</h2>
+                <p >Solo déjanos tu nombre y teléfono(opcional un horario)</p>
+                <form action="https://formspree.io/f/mzbnkdze" method="POST" >
+                    <input type="text" id="nombre" name="nombre" placeholder="Nombre y teléfono">
+                    <br/>                  
+                    <button class="buttonContacto" type="submit" >Enviar</button>
+                </form>
+                
+                <p >Te proporcionamos más información, despejamos dudas y entendemos mejor la idea de tu negocio.</p>
+            </div>
+            <div class="contacto-info">
+                <div class="contacto-item">
+                    <i class="fas fa-phone" style="font-size: 80px; width: 83px;color:mediumturquoise"></i>                   
+                </div>
+                <span style="color:mediumturquoise">Teléfono: (123) 456-7890</span>
+                <div class="contacto-item">
+                    <i class="fas fa-envelope" style="font-size: 80px; width: 83px;color:mediumturquoise"></i>
+                    
+                </div>
+                <span style="color:mediumturquoise">Correo: ejemplo@example.com</span>
+               
+                <div class="contacto-item">
+                    <i class="fab fa-whatsapp" style="font-size: 80px; width: 83px;color:mediumturquoise"></i>
+                    
+                </div>
+                <span style="color:mediumturquoise">WhatsApp: (123) 456-7890</span>
+            </div>
+        </div>
+    </div>
+</section>
+<footer>
+    <div class="container_footer">
+        <div class="row">
+            <div class="col-md-4">
+                <h4>Site Map</h4>
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li class="submenu_footer">
+                        <a href="#">Páginas Web</a>
+                        <ul>
+                            <li><a href="#">One Page</a></li>
+                            <li><a href="#">Sitio Web</a></li>
+                            <li><a href="#">Tienda en linea</a></li>
+                           
+                            <!-- Agrega más opciones si es necesario -->
+                        </ul>
+                    </li>
+                    <li><a href="#">Diseño Gráfico</a></li>
+                    <li><a href="#">Nosotros</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h4>Política de Privacidad</h4>
+                <ul>
+                    <li><a href="#">Términos y Condiciones</a></li>
+                    <li><a href="#">Aviso Legal</a></li>
+                    <li><a href="#">Política de Cookies</a></li>
+                    <li><a href="#">Política de Privacidad</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h4>Redes Sociales</h4>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">LinkedIn</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+    
+
+
+
+  
+
+
+
+  
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script>
+    AOS.init({
+    duration: 1000, // Duración del efecto en milisegundos
+    once: false, // Permitir que las animaciones ocurran más de una vez
+});
+</script>
+
+
+<script src="script.js"></script>
+<script>
+   
+
+
+   document.addEventListener("DOMContentLoaded", function() {
+  const questions = document.querySelectorAll(".question");
+  questions.forEach(function(question) {
+    question.addEventListener("click", function() {
+      this.classList.toggle("active");
+      const answer = this.nextElementSibling;
+      answer.classList.toggle("active");
+    });
+  });
+});
+
+
+
+
+</script>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+   AOS.init({
+            duration: 500, // Duración del efecto en milisegundos
+            once: false, // Permitir que las animaciones ocurran más de una vez
+        });
+</script>
+</body>
+</html>

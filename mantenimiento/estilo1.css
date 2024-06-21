@@ -1,0 +1,722 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:wght@100;300;400;800$display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Work Sans';
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Header */
+header {
+    padding: 0;
+    margin: 0;
+}
+
+.logo img {
+    max-width: 100%;
+    padding-left: 20px;
+    padding-top: 70px;
+}
+
+#whatsapp img {
+    width: 60px;
+    height: 60px;
+}
+
+#whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 0;
+    z-index: 999;
+}
+
+/* Menú */
+
+.contenedor-header {
+    background: rgba(148, 62, 206, 0);
+    position: fixed;
+    width: 100%;
+    height: auto;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    transition: background-color 0.5s ease;
+}
+
+.contenedor-header header {
+    max-width: 100%;
+    height: 90px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 20px;
+}
+
+.contenedor-header header ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+.contenedor-header header nav ul li a {
+    color: #fdfbfb;
+    font-size: 24px;
+    text-decoration: none;
+    transition: color 0.2s, font-size 0.2s;
+    margin: 0 30px;
+    font-size: 22px;
+    transition: color 0.5s ease;
+}
+
+.contenedor-header header nav ul li a:hover {
+    color: #34ccd4;
+    font-size: 27px;
+}
+
+.contenedor-header header nav ul li a:active,
+.contenedor-header header nav ul li a:focus {
+    color: #007bff;
+    font-size: 20px;
+    outline: none;
+}
+
+/* Submenu */
+#submenu {
+    display: none;
+    position: absolute;
+    background-color: #43207c36;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+#submenu li {
+    margin-bottom: 5px;
+}
+
+#submenu a {
+    color: #fdfcfc;
+    text-decoration: none;
+}
+
+#submenu a:hover {
+    color: #007bff;
+}
+
+#submenu1 {
+    display: none;
+    position: absolute;
+    background-color: #43207c36;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+#submenu1 li {
+    margin-bottom: 5px;
+}
+
+#submenu1 a {
+    color: #fdfcfc;
+    text-decoration: none;
+}
+
+#submenu1 a:hover {
+    color: #007bff;
+}
+
+.cambiar-fondo .contenedor-header {
+    background-color: #270950b3; /* Cambia el color de fondo al hacer scroll */
+}
+
+.cambiar-fondo .contenedor-header header nav ul li a {
+    color: #fcfafa; /* Cambia el color del texto al hacer scroll */
+}
+
+.botonnav1 {
+    width: 100px;
+    background-color: #f0f4f400;
+    color: rgb(245, 245, 248);
+    padding: 5px 5px;
+    border: #f6f5f8 1px solid;
+    border-radius: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s, transform 0.3s;
+    text-decoration: none;
+    margin-left: 30px;
+}
+
+.botonnav1:hover {
+    background-color: #f6f6fa;
+    transform: translateY(-5px);
+    color: #6190ae;
+    border: 1px solid #6190ae;
+}
+
+
+.inicio {
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    height: auto;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    background: linear-gradient(to bottom, rgba(146, 32, 154, 0.565), #43207c); /* Colores rosa y azul con transparencia */
+}
+
+.acerca-de {
+    position: absolute;
+    top: 40%;
+    left: 0;
+    width: 100%; /* Ajuste para que ocupe todo el ancho de la página */
+    text-align: center;
+    color: white;
+    transform: translateY(-50%);
+}
+
+.textoPortada {
+    
+    font-size: 100px;
+    color: #fbf7f7;
+    margin-bottom: 30px;
+    margin-top: 150px;
+}
+
+.parrafoPortada {
+    font-size: 120px;
+    color: #faf9f9;
+    margin-bottom: 40px;
+}
+.blueText {
+    color: rgb(22, 190, 216);
+}
+
+/*MANTENIMIENTO*/
+
+.mantenimiento{
+    padding-top: 5%;
+    padding-left: 20%;
+    padding-right: 20%;
+    background-image: url('img/FONDO.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    
+}
+.mantenimientoTarifa{
+    padding-top: 5%;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+.tituloMantenimiento h1 {
+    font-size: 65px;
+    color: #1944a9;
+}
+.tituloMantenimiento p {
+    font-size: 24px;
+    padding-bottom: 3%;
+    color: #1944a9;
+}
+.tituloMantenimiento1 h1 {
+    font-size: 65px;
+    text-align: center;
+    color: #1944a9;
+    margin-top: 8%;
+}
+.tituloMantenimiento1 p {
+    font-size: 24px;
+    padding-bottom: 2%;
+    color: #1944a9;
+    text-align: center;
+}
+.contenedor {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 8%;
+}
+
+.tituloMantenimiento {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/*TARJETAS CARACTERISTICAS MANTENIMIENTO*/
+
+.contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-left: 5%;
+    padding-right: 5%;
+    
+}
+
+/* Ajuste para hacer que las tarjetas ocupen todo el ancho de la página */
+.contenedor .tarjeta {
+    width: calc(25% - 20px); /* Establece que cada tarjeta ocupe el 25% del ancho total, con un pequeño margen */
+    margin: 10px; /* Ajusta el margen entre las tarjetas según tu preferencia */
+}
+.tarjeta {
+    width: 300px;
+    height: 400px;
+    border-radius: 20px;
+    background: linear-gradient(to top, rgba(146, 32, 154, 0.565), #2d056e);
+    margin: 10px;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    
+}
+
+.tarjeta:hover {
+    transform: translateY(-10px);
+}
+
+
+.contenido {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+
+.contenido i {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.contenido h2 {
+    font-size: 18px;
+    margin-bottom: 5px;
+    color:#e92fca;
+   
+   
+}
+
+.contenido p {
+    font-size: 16px;
+    color:#52d6f7;
+    
+    
+}
+
+.separador {
+    border: none;
+    border-top: 6px solid #f333f6; /* Línea de separación de color rosa */
+    width: auto; /* Ancho de la línea */
+    margin: 20px auto; /* Margen superior e inferior para centrar la línea */
+}
+.separador1 {
+    border: none;
+    border-top: 6px solid #f333f6; /* Línea de separación de color rosa */
+    width: 60%; /* Ancho de la línea */
+    margin: 20px auto; /* Margen superior e inferior para centrar la línea */
+   
+}
+
+/*RAZONES*/
+
+.razones {
+    width: 100%;
+    background: linear-gradient(to bottom, #43207c, rgb(146, 32, 154), #43207c);
+    color: white;
+    padding: 50px 0; /* Espacio entre el contenido y los bordes */
+    box-sizing: border-box; /* Para incluir el padding en el tamaño total */
+    display: flex; /* Utilizamos flexbox para crear las columnas */
+    justify-content: center; /* Centramos el contenido horizontalmente */
+    align-items: center; /* Centramos el contenido verticalmente */
+    padding: 5%;
+  }
+
+  .razones .columna1 {
+    width: 60%; /* Ancho de cada columna */
+    padding: 5%;
+    box-sizing: border-box;
+    
+  }
+
+  .razones .columna:nth-child(odd) {
+    border-right: 1px solid white; /* Línea divisoria entre columnas */
+  }
+.razones .columna1 h2{
+    font-size: 50px;
+}
+.razones .columna1 p{
+    font-size: 20px;
+    padding-bottom: 50px;
+}
+  .razones .columna2 h2 {
+    color: white;
+    font-size: 25px;
+  }
+  .razones .columna2 p {
+    color: white;
+    font-size: 20px;
+    padding-bottom: 20px;
+  }
+  .razones .columna ul {
+    list-style-type: none; /* Quitamos los puntos de la lista */
+    padding: 0;
+  }
+
+  .razones .columna ul li {
+    padding-left: 15px; /* Espacio antes del icono */
+    position: relative; /* Para posicionar el icono */
+  }
+
+  .razones .columna ul li:before {
+    content: "✔"; /* El icono de visto */
+    color: green; /* Color del icono */
+    position: absolute;
+    left: 0; /* Posicionamiento relativo al inicio del elemento padre */
+  }
+  .boton_razones{
+    width: auto;
+    background-color: #f0f4f400;
+    color: rgb(245, 245, 248);
+    padding:10px 20px;
+    border: #f6f5f8 1px solid;
+    border-radius:30px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s, transform 0.3s;
+    text-decoration: none;
+   
+    
+  }
+  .boton_razones:hover{
+    background-color: #d626d376;
+    transform: translateY(-5px);
+    color: #56d4f3;
+    border: 1px solid #6190ae00;
+    
+  }
+/*TARJETAS TARIFAS*/
+.mantenimientoTarifa{
+    
+    background: linear-gradient(to bottom, rgb(234, 233, 235), #43207cd8);
+}
+.tarjeta-cuerpo {
+    background-color: #7258e800;
+    height: auto;
+    width: 90%;
+    margin-left: 5%;
+}
+
+.tarjetaMantenimiento-titulo,
+.tarjetaMantenimiento-subtitulo,
+.tarjetaMantenimiento-texto {
+    color: #fdf9f9;
+}
+
+.tarjetaMantenimiento-titulo {
+    font-size: 120px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.tarjetaMantenimiento-texto {
+    color: #fff;
+    margin: 30px;
+}
+
+.tarjetaMantenimiento {
+   
+    background-color: #401487; /* Fondo azul */
+            border-radius: 10px; /* Bordes redondeados */
+            padding: 20px; /* Padding */
+            opacity: 0; /* Inicialmente oculto */
+            transform: translateY(100px); /* Mover hacia abajo */
+            transition: opacity 1s ease, transform 2s ease; /* Efecto de transición */
+}
+.tarjetaMantenimiento.mostrar {
+    opacity: 1; /* Mostrar la tarjeta */
+    transform: translateY(0); /* Quitar el desplazamiento */
+}
+
+.tarjetaMantenimiento-titulo {
+    font-size: 120px;
+    font-weight: bold;
+    color: #b035c1;
+}
+
+.tarjetaMantenimiento-subtitulo {
+    color: #b035c1;
+}
+
+.tarjetaMantenimiento-texto {
+    color: #b035c1;
+    margin: 30px;
+}
+
+.boton-mantenimiento {
+    background-color: #ff66cc; /* Fondo rosa */
+    font-size: 26px;
+    color: #fff; /* Texto blanco */
+    border: none; /* Sin borde */
+    padding: 5px 20px; /* Espaciado interno */
+    border-radius: 20px; /* Esquinas redondeadas */
+    cursor: pointer; /* Cursor de puntero */
+    transition: background-color 0.3s ease; /* Transición suave */
+    margin-bottom: 20px;
+}
+
+.boton-mantenimiento:hover {
+    background-color: #3498db; /* Cambio de color al pasar el cursor */
+    color: #2f0e6c; /* Texto azul para el botón */
+    border: none; /* Sin borde */
+    border-radius: 20px; /* Bordes redondeados */
+    padding: 5px 20px; /* Padding */
+    cursor: pointer; /* Cursor de puntero */
+}
+
+.nombre-plan {
+    font-size: 36px;
+    font-weight: bold;
+    color: #f9f7f7;
+}
+
+.precio {
+    font-size: 36px;
+    color: #c730b8; /* Rojo */
+}
+
+.precio-rojo {
+    font-size: 48px;
+    color: #c730b8; /* Rojo */
+}
+
+.caracteristicas {
+    font-size: 32px;
+    font-weight: bold;
+    color: #31f3f7;
+    margin-top: 20px;
+}
+
+.lista-caracteristicas {
+    text-align: left;
+    list-style: none;
+    margin-bottom: 40px;
+}
+
+.lista-caracteristicas li {
+    font-size: 18px;
+    color: #31f3f7;
+    margin-bottom: 10px;
+}
+
+.visto {
+    color: #4CAF50; /* Verde */
+    font-size: 25px;
+    
+  
+}
+
+.cruz {
+    color: #FF0000; /* Rojo */
+    font-size: 15px;
+    
+}
+
+/*FAQ*/
+.preguntas{
+    background: linear-gradient(to bottom, #43207cd8,rgba(146, 32, 154, 0.565) ); 
+}
+
+.faq {
+    max-width: auto;
+    margin: 0 auto;
+    padding: 10%;
+    text-align: center; /* Centrar el contenido */
+  }
+  
+ .faq h2 {
+    font-size:65px; /* Tamaño de fuente de 5rem */
+    padding-bottom: 5%;
+    color: #c728d9;
+    
+  }
+  
+  .pregunta {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .pregunta li {
+    margin-bottom: 40px; /* Aumentar el margen inferior */
+  }
+  
+  .question {
+    background-color: #0e4d6a00;
+
+    cursor: pointer;
+    font-size: 2rem; /* Tamaño de fuente más grande */
+    width: 80%; /* Ocupar un ancho del 80% */
+    margin: 0 auto; /* Centrar el elemento */
+    text-align: left; /* Justificar al principio */
+    color:#fff;
+  }
+  
+  .answer {
+    background-color: #e7e4e700;
+    display: none;
+    padding: 20px; /* Aumentar el padding */
+    font-size: 1.2rem; /* Tamaño de fuente más grande */
+    width: 80%; /* Ocupar un ancho del 80% */
+    margin: 0 auto; /* Centrar el elemento */
+    text-align: left; /* Justificar al principio */
+    border:1px solid #fff;
+    color:#fafafb;
+    border-radius: 20px;
+
+
+  }
+  
+  .question.active .toggle::after {
+    content: "-";
+  }
+  
+  .question .toggle::after {
+    content: "+";
+  }
+  
+  .answer.active {
+    display: block;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    background-color: #44207c; /* Fondo azul */
+    color: #fff; /* Texto blanco */
+    padding: 50px 0; /* Espacio interno */
+    
+}
+
+.container_footer {
+    text-align: center; /* Centrar texto */
+}
+
+.container_footer h4 {
+    margin-bottom: 20px; /* Separación entre títulos y listas */
+}
+
+.container_footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.container_footer ul li {
+    margin-bottom: 10px; /* Separación entre elementos de la lista */
+}
+
+.container_footer ul li a {
+    color: #fff; /* Enlaces blancos */
+    text-decoration: none; /* Sin subrayado */
+    font-weight: bold; /* Texto en negrita */
+    transition: color 0.3s; /* Transición de color suave */
+    position: relative;
+}
+
+.container_footer ul li a:hover {
+    color: #d15bc9; /* Cambio de color al pasar el mouse */
+}
+
+
+.submenu_footer ul {
+    display: none;
+    position: absolute;
+    background-color: #3498db;
+    width: 150px;
+    padding: 10px 0;
+    left: 100%; /* Mueve el submenú a la derecha */
+    top: 0;
+    z-index: 1;
+}
+
+.submenu_footer:hover ul {
+    display: block;
+}
+
+.submenu_footer ul li {
+    text-align: center;
+}
+
+.submenu_footer ul li a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 5px 0;
+}
+
+/* Ajustes adicionales para la columna de Páginas Web */
+.col-md-4 {
+    position: relative; /* Asegura que la columna tenga una posición relativa */
+}
+
+.submenu_footer ul {
+    left: calc(60% + 10px); /* Desplaza el submenú a la derecha */
+    top: 0;
+    background-color: #43207c00;
+    border:1px solid #fff;
+    border-radius: 15px;
+}

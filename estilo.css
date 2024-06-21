@@ -1,0 +1,1689 @@
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Work Sans';
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    width: auto;
+}
+
+html {
+    scroll-behavior: smooth;
+    width: auto;
+}
+
+/* Header */
+header {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.logo img {
+    max-width: 100%;
+    padding-left: 20px;
+    padding-top: 70px;
+}
+
+#whatsapp img {
+    width: 60px;
+    height: 60px;
+}
+
+#whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 0;
+    z-index: 999;
+}
+
+/* Menú */
+.contenedor-header {
+    background: rgba(148, 62, 206, 0);
+    position: fixed;
+    width: 100%;
+    height: auto;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    transition: background-color 0.5s ease;
+}
+
+.contenedor-header header {
+   width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 20px;
+}
+
+.contenedor-header header ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+.contenedor-header header nav ul li a {
+    color: #fdfbfb;
+    font-size: 24px;
+    text-decoration: none;
+    transition: color 0.2s, font-size 0.2s;
+    margin: 0 30px;
+    font-size: 22px;
+    transition: color 0.5s ease;
+}
+
+.contenedor-header header nav ul li a:hover {
+    color: #34ccd4;
+    font-size: 27px;
+    padding: 0;
+    margin: 0;
+}
+
+.contenedor-header header nav ul li a:active,
+.contenedor-header header nav ul li a:focus {
+    color: #007bff;
+    font-size: 20px;
+    outline: none;
+    padding: 0;
+}
+
+/* Submenu */
+#submenu {
+    display: none;
+    position: absolute;
+    background-color: #43207c36;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+#submenu li {
+    margin-bottom: 5px;
+}
+
+#submenu a {
+    color: #fdfcfc;
+    text-decoration: none;
+}
+
+#submenu a:hover {
+    color: #007bff;
+}
+
+#submenu1 {
+    display: none;
+    position: absolute;
+    background-color: #43207c36;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+#submenu1 li {
+    margin-bottom: 5px;
+}
+
+#submenu1 a {
+    color: #fdfcfc;
+    text-decoration: none;
+}
+
+#submenu1 a:hover {
+    color: #007bff;
+}
+
+.cambiar-fondo .contenedor-header {
+    background-color: #270950b3; /* Cambia el color de fondo al hacer scroll */
+    width: 100%;
+}
+
+.cambiar-fondo .contenedor-header header nav ul li a {
+    color: #fcfafa; /* Cambia el color del texto al hacer scroll */
+}
+
+.nav-responsive{
+    background-color:#5eb7d200;
+    color:#007bff;
+
+    cursor: pointer;
+    display: none;
+   
+    
+ 
+ }
+.botonnav1 {
+    width: 100px;
+    background-color: #f0f4f400;
+    color: rgb(245, 245, 248);
+    padding: 5px 5px;
+    border: #f6f5f8 1px solid;
+    border-radius: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s, transform 0.3s;
+    text-decoration: none;
+    margin-left: 30px;
+}
+
+.botonnav1:hover {
+    background-color: #f6f6fa;
+    transform: translateY(-5px);
+    color: #6190ae;
+    border: 1px solid #6190ae;
+}
+
+
+
+
+.botones-navegacion {
+    display: flex;
+    align-items: center;
+    height: auto;
+    width: auto;
+    
+}
+
+.boton-redondo {
+    margin-top: 50px;
+    padding-top: 50px;
+    padding-bottom: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 150px;
+    background-color: #3498db00;
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.3s ease; /* Agregamos una transición para suavizar el cambio de tamaño */
+}
+
+.boton-redondo img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+}
+
+/* Efecto de agrandamiento al pasar el mouse */
+.boton-redondo:hover {
+    transform: scale(1.2); /* Agrandamos el tamaño del botón al 120% */
+}
+
+
+/* Inicio */
+.inicio {
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    height: 100%;
+    width: 100%;
+    
+   
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(146, 32, 154, 0.565), #43207c); /* Colores rosa y azul con transparencia */
+   
+}
+
+.acerca-de {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+   
+
+}
+
+.textoPortada {
+    font-size: 2em;
+    font-size: 100px;
+    color: #fbf7f7;
+    margin-bottom: 30px;
+    margin-top: 150px;
+}
+
+.parrafoPortada {
+    font-size: 1.2em;
+    color: #faf9f9;
+    margin-bottom: 40px;
+}
+
+.inicio input {
+    width: 60%;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid rgba(64, 220, 241, 0);
+}
+
+.boton2 {
+    width: auto;
+    padding: 20px 30px;
+    border: 1px solid #fff;
+    border-radius: 50px;
+    
+    background-color: #1fc6cc00;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.boton2:hover {
+    background-color: #c728d9b0;
+    transform: translateY(-5px);
+    color: #f0f6f6;
+    border: 1px solid #c728d9;
+}
+
+.boton2 i {
+    font-size: 30px;
+    right: 5px;
+    margin-left: 20px;
+    margin-right: 10px;
+}
+
+/* Qué Ofrecemos */
+.contenedor {
+    background: #44207c;
+    height: auto; 
+    padding: 5%;
+    width: auto;
+}
+
+.que-ofrecemos {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    background: #44207c;
+    align-items: flex-start;
+    padding-top: 5%;
+   
+}
+
+.titulo_ofrecemos-superpuesto {
+    position: relative;
+    padding-top: 10%;
+}
+
+.frase_ofrecemos-superpuesta {
+    position: absolute;
+    top: 38%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 8rem;
+    width: 80%;
+    line-height: 1.2;
+    color: rgba(255, 255, 255, 0.228);
+}
+
+.tituloTarjetas_ofrecemos {
+    padding: 10%;
+    color: #fff;
+    font-size: 6rem;
+    text-align: center;
+}
+
+.right-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 10px;
+}
+
+.right-content button {
+    width: 200px;
+    margin: 20px;
+}
+
+/* Qué Hacemos JavaScript */
+.custom-card {
+    border: 1px solid #dddddd00;
+    padding: 20px;
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+}
+
+.card-text {
+    flex: 1;
+   
+    color: #f4f9f9;
+    font-size: 30px;
+    border: 1px solid #ffffff00;
+    border-radius: 25px;
+    background-color: #b651c600;
+   
+    
+}
+
+.card-image-container {
+    width: 60%;
+    display: flex;
+    align-items: center;
+}
+
+.card-image {
+    width: 100%;
+    height: auto;
+}
+
+.content-container {
+    background-color: #b651c6bb;
+    border-radius: 2%;
+    border: 1px solid #10ecf4;
+    font-size: 25px;
+    padding: 20px;
+    padding-left: 10%;
+    left: 0;
+    display: flex;
+    justify-content: left;
+}
+
+.btn-orange {
+    background-color: transparent; /* Fondo transparente */
+    border: none; /* Sin borde */
+    padding: 0; /* Sin padding */
+    color: #10ecf4; /* Color del texto */
+    margin-top: 90px;
+    transition: color 0.8s ease; /* Transición de color */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+    font-size: 24px; /* Tamaño del texto */
+    position: relative; /* Establece la posición relativa */
+    display: inline-block; /* Permite centrar verticalmente */
+}
+
+.btn-orange:hover {
+    color: #cc1bdc; /* Cambia el color del texto al pasar por encima */
+}
+
+.btn-orange::after {
+    content: "\00BB"; /* Agrega la flecha después del botón */
+    font-size: 40px; /* Tamaño del texto */
+    position: absolute;
+    transform: translateX(0%); /* Alinea verticalmente la flecha con el texto */
+    right: -40px;/* Coloca la flecha a la derecha */
+    top:-40%;
+    transition: transform 0.5s ease; /* Transición de la transformación */
+     /* Oculta inicialmente la flecha */
+}
+
+.btn-orange:hover::after {
+    transform: translateX(15px); /* Mueve la flecha hacia la derecha */
+    opacity: 1; /* Muestra la flecha al pasar por encima */
+}
+
+
+     
+
+/* Tarjetas específicas */
+.one-page-card,
+.sitio-web-card,
+.tienda-en-linea-card,
+.diseno-grafico-card,
+.marketing-digital-card {
+    background-color: #1046c400;
+    color: #fbf9f9;
+    border-radius: 20px;
+    padding: 30px;
+}
+.one-page-card h1,
+.sitio-web-card h1,
+.tienda-en-linea-card h1,
+.diseno-grafico-card h1,
+.marketing-digital-card h1 {
+    font-size: 70px;
+}
+
+/* Tarjetas de vídeo */
+.titulo-superpuesto {
+    position: relative;
+}
+
+.frase-superpuesta {
+    position: absolute;
+    top: 38%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 8rem;
+    color: rgba(255, 255, 255, 0.228);
+}
+
+.tituloTarjetas {
+    font-size: 96px;
+    padding-top: 10%;
+    padding-bottom: 3%;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.tarjeta-cuerpo {
+    background-color: #7258e8;
+    border: 1px solid #ccc;
+    height: auto;
+    width: 90%;
+    margin-left: 5%;
+}
+
+.tarjeta-titulo,
+.tarjeta-subtitulo,
+.tarjeta-texto {
+    color: #fdf9f9;
+}
+
+.tarjeta-titulo {
+    font-size: 120px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.tarjeta-texto {
+    color: #fff;
+    margin: 30px;
+}
+
+/* Ajustes adicionales para tarjeta1 */
+.tarjeta1 {
+    border: 1px solid #ccc;
+    height: auto;
+    background-color: #fcfbfc;
+    width: 90%;
+    margin-left: 5%;
+}
+
+.tarjeta1-titulo {
+    font-size: 120px;
+    font-weight: bold;
+    color: #b035c1;
+}
+
+.tarjeta1-subtitulo {
+    color: #b035c1;
+}
+
+.tarjeta1-texto {
+    color: #b035c1;
+    margin: 30px;
+}
+
+.icono-final {
+    width: 100px;
+    height: 100px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Quiénes Somos */
+.fondo {
+    height:auto;
+    position: relative;
+    background: linear-gradient(rgba(38, 50, 56, 255), rgba(38, 50, 56, 255)), url(img/Component\ 12.png);
+    overflow: hidden;
+    background-attachment: fixed;
+    background-position: center;
+    padding-bottom: 20%;
+}
+
+.quienessomos {
+    background-color: #263238;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+
+.contenido {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    padding-top: 15%;
+}
+
+.izquierda {
+    width: 50%;
+}
+
+.derecha {
+    width: 50%;
+}
+
+.izquierda h2 {
+    font-size: 64px;
+}
+
+.izquierda p {
+    font-size: 20px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.boton3 {
+    width: auto;
+    padding: 20px 30px;
+    border: 1px solid #ffffff00;
+    border-radius: 50px;
+    
+    background-color: #c728d987;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+    margin-top: 40px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.boton3:hover {
+    background-color: #c728d9b9;
+    transform: translateY(-5px);
+    color: #f0f6f6;
+    border: 1px solid #c728d9;
+}
+.sesgoarriba {
+    z-index: 10;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-width: 35vh 100vw 0 0;
+    border-style: solid;
+    border-color: #44207c transparent transparent transparent;
+    background-color: transparent;
+}
+
+/* Nuevas filas */
+#onePageText{
+    margin-top: 5%;
+}
+#fila {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.text-content ul li{
+    font-size: 24px;
+    
+    padding-top: 10%;
+
+}
+.fila .izquierda,
+.fila .derecha {
+    width: 45%;
+}
+
+.fila h3 {
+    font-size: 30px;
+    color:#fff;
+}
+
+.fila p {
+    font-size: 20px;
+    color:#fff;
+}
+.fila img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+.subrayado {
+    position: relative;
+}
+.subrayado::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 2px;
+    background-color: #007bff; /* color del subrayado */
+    transform: scaleX(0);
+    transform-origin: bottom left;
+    transition: transform 0.3s ease;
+}
+.subrayado.show::after {
+    transform: scaleX(1);
+}
+.fila {
+    margin-bottom: 20px;
+}
+.fila img {
+    width: 100%;
+    height: auto;
+}
+/* Servicios que incluyen */
+.fondo1 {
+    height: auto;
+    position: relative;
+    text-align: center;
+    background-color: #44207c;
+    overflow: hidden;
+    background-attachment: fixed;
+    background-position: center;
+   
+    padding-bottom: 15%;
+}
+
+.cards {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card{
+    margin-bottom: 100px;
+}
+
+.container .card { 
+    text-align: center;
+    padding: 20px;
+    overflow: hidden;
+    position: relative;
+    width: 320px;
+    height: 200px;
+    background: #b135c100;
+    border: none;
+}
+
+.card::before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #f0f3f300;
+    transition: top 0.3s;
+    
+}
+
+.card:hover {
+    color: white;
+}
+
+.card:hover::before {
+    top: 0;
+}
+
+/* Servicios */
+.frase1-superpuesta {
+    position: absolute;
+    top: 8.5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 9rem;
+    width: 80%;
+    line-height: 1.2;
+    color: rgba(255, 255, 255, 0.228);
+}
+
+.tituloTarjetas1 {
+    font-size: 30px;
+    padding: 10%;
+    color: #fff;
+}
+
+.flip-card {
+    perspective: 1000px;
+}
+
+.flip-card-inner {
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+}
+
+.flip-card-front {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background-color: #12eeee00;
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.flip-card-front h5 {
+    object-fit: cover;
+    font-size: 30px;
+    margin-top: 20px;
+}
+.flip-card-front img{
+    width: 100px;
+    height: 100px;
+}
+
+.flip-card-back p {
+    font-size: 20px;
+    color: #fff;
+    padding: 0;
+}
+
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+}
+
+.card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.botonPrecio {
+    border-radius: 10px;
+    background-color: #b751c6;
+    color: white;
+    padding: 10px      
+} 
+
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+}
+
+.card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.botonPrecio {
+    border-radius: 10px;
+    background-color: #b751c6;
+    color: white;
+    padding: 10px;
+}
+
+.botonPrecio:hover {
+    background-color: #73599d;
+}
+
+.sesgoabajo-unico {
+    z-index: 10;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-width: 0 0 35vh 100vw;
+    border-style: solid;
+    border-color: transparent transparent #44207c transparent;
+}
+.sesgoabajo1-unico {
+    z-index: 10;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-width: 0 0 35vh 100vw;
+    border-style: solid;
+    border-color: transparent transparent rgba(146, 32, 154, 0) transparent;
+}
+/* TARIFAS */
+.tarifas{
+    background: linear-gradient(to bottom, rgba(146, 32, 154, 0.565), #43207c);
+}
+ .contenedor{
+    padding-left: 15%;
+    padding-right: 15%;
+    
+}
+.titulo-superpuesto {
+    position: relative;
+}
+
+.frase-superpuesta {
+    position: absolute;
+    top: 38%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 8rem;
+    color: rgba(255, 255, 255, 0.228);
+}
+
+.titulo-tarifas {
+    font-size: 5rem;
+    padding: 10%;
+    color: #fff;
+}
+
+.tarjeta-precios-cuerpo {
+    background-color: #7258e8;
+    border: 1px solid #ccc;
+    height: auto;
+    width: auto;
+    margin:20px;
+    padding: 20px;
+   
+   
+}
+
+.tarjeta-precios-titulo,
+.tarjeta-precios-subtitulo,
+.tarjeta-precios-texto {
+    color: #fdf9f9;
+}
+
+.tarjeta-precios-titulo {
+    font-size: 40px;
+    font-weight: bold;
+    color: #fff;
+   
+}
+.tarjeta-precios-titulobajo{
+    font-size: 24px;
+    color: #fff;
+}
+.tarjeta-precios-subtitulo{
+   
+    font-size: 20px; /* Tamaño de la fuente para /al mes */
+    color: #fff; /* Color del texto para /al mes */
+}
+
+.numero-precio {
+    font-size: 80px; /* Tamaño de la fuente para el número 38 */
+    color: #27d0e3; /* Color del texto para el número 38 */
+    display: inline-block; /* Para centrar horizontalmente */
+    vertical-align: middle; /* Para centrar verticalmente */
+   
+}
+.tarjeta-precios-texto {
+    color: #cf66d1;
+    font-weight: bold;
+    
+}
+.caracteristicas {
+    color: white; /* Color de texto blanco */
+    list-style-type: none; /* Quita el punto al principio de cada ítem de la lista */
+    text-align: center; /* Centra el texto */
+    padding: 10px;
+    margin: 0;
+    
+    
+}
+.caracteristicas li {
+    margin-bottom: 20px; /* Ajusta el margen inferior para separar las filas */
+}
+
+.btn-comprar {
+    width: auto;
+    padding: 10px 50px;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    
+    background-color: #1fc6cc00;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn-comprar:hover {
+    background-color: #c728d9b0;
+    transform: translateY(-5px);
+    color: #f0f6f6;
+    border: 1px solid #c728d9;
+}
+
+
+.titulo-sin-complicarte {
+    font-size: 4rem;
+   padding-top: 10%;
+    color: #fff;
+}
+
+.tarjeta-rectangular{
+    background-color: #b651c6c6;
+    border: 1px solid #b651c6c6;
+    border-radius: 10px;
+    height: auto;
+    width: auto;
+    margin:20px;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.tarjeta-rectangular:hover {
+    transform: translateY(-5px); /* Eleva la tarjeta al pasar el cursor */
+    box-shadow: 0px 5px 15px rgba(193, 193, 193, 0.993); /* Agrega una sombra */
+}
+.titulo-tarjeta-tarifa{
+    font-size: 30px;
+    color:#fff;
+}
+.texto-tarjeta-tarifa{
+    font-size: 20px;
+    color:#4c1a96;
+    font-weight: bold;
+}
+
+.icono-tarjeta{
+    padding-bottom: 20px;
+}
+/*MANTENIMIENTO*/
+.overlay-mantenimiento {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(67, 32, 127, 0.73), rgb(67, 32, 124)); /* Colores rosa y azul con transparencia */
+    z-index: 0; /* Asegura que el overlay esté por debajo del texto e imagen */
+}
+
+.mantenimiento-seccion {
+    width: 100%;
+    height: auto;
+    background: linear-gradient(rgba(5, 7, 12, 0.036), rgba(5, 7, 12, 0)), url(img/portada.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    color:  #faf6f6;
+    text-align: center;
+    z-index: 1; /* Asegura que la sección de mantenimiento esté por encima del overlay */
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.mantenimiento-imagen-container {
+    position: relative;
+}
+
+.mantenimiento-imagen-container::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(146, 32, 154, 0), #43207c00); /* Colores rosa y azul con transparencia */
+    z-index: 1;
+    mix-blend-mode: multiply; /* Mezcla los colores de la imagen con los del degradado */
+}
+
+.mantenimiento-imagen {
+    position: relative;
+    z-index: 2; /* Asegura que la imagen esté por encima del degradado */
+}
+
+
+.mantenimiento-textos {
+    margin: 10%;
+    color: white; /* Cambiado a blanco para asegurar que el texto sea visible */
+    text-align: left;
+    position: relative;
+    z-index: 3; /* Asegura que el texto esté por encima del overlay */
+}
+
+.mantenimiento-subtitulo {
+    font-size: 64px;
+    font-weight: 300;
+    margin-bottom: 32px;
+}
+
+.mantenimiento-p {
+    font-size: 24px;
+    
+}
+.mantenimiento-lista li{
+    list-style: none;
+    font-size: 20px;
+}
+.mantenimiento-lista li::before {
+    content: "\2713"; /* Código Unicode del símbolo de verificación */
+    color: #4CAF50; /* Color verde */
+    margin-right: 5px; /* Espacio entre el símbolo y el texto */
+}
+ .boton-mantenimiento {
+    width: auto;
+    padding: 20px 30px;
+    border: 1px solid #fff;
+    border-radius: 50px;
+    
+    background-color: #1fc6cc00;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s, transform 0.3s;
+   
+}
+.boton-mantenimiento:hover {
+    background-color: #c728d9b0;
+    transform: translateY(-5px);
+    color: #f0f6f6;
+    border: 1px solid #c728d9;
+  
+}
+.mantenimiento-fila{
+    background-color: #e510f463;
+    position: relative; /* Asegura que el z-index funcione correctamente */
+    z-index: 2;
+   
+}
+.texto-boton {
+    overflow: hidden; /* Oculta el texto que se desborda */
+    white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+    width: 100%; /* Ajusta el ancho del contenedor al 100% */
+    font-size: 75px;
+    color: #c728d9;
+    background-color: #c728d900;
+}
+
+.texto-boton p {
+    animation: desplazar 15s infinite; /* Inicia la animación automáticamente */
+    color:#ffffff;
+    text-decoration: none;
+    
+}
+
+.textoPasarela{
+    color:#c728d9;
+}
+
+/* Define la animación */
+@keyframes desplazar {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-110%);
+    }
+}
+.imagen-fondo {
+    background-image: url('');
+    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el contenedor */
+    background-position: center; /* Centra la imagen en el contenedor */
+    height: 100px; /* Ajusta la altura según sea necesario */
+}
+/* Separaciones */
+.mantenimiento-sesgoabajo {
+    z-index: 10;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    border-width: 0 0 35vh  100vw ;
+    border-style:solid;
+    border-color:#43207c7e transparent transparent transparent;
+   
+}
+
+
+/*CONTRATANOS*/
+
+
+
+
+
+#derechaFoto1 img {
+    width: 100%;
+    display: block;
+    transition: transform 0.3s ease; /* Transición para suavizar el efecto de ampliación */
+}
+
+#derechaFoto1:hover img {
+    transform: scale(1.1); /* Ampliar la imagen al pasar el cursor sobre ella */
+}
+
+
+/* Estilo para el subrayado */
+#izquierdaTextoFoto1{
+    padding: 5%;
+}
+#izquierdaTextoFoto1 h3 {
+    position: relative;
+  
+}
+
+#izquierdaTextoFoto1 h3 .subrayado::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 15px;
+    background-color: rgba(198, 113, 199, 0.615); /* Color de la franja */
+    position: absolute;
+    bottom: 0.5px; /* Posicionamiento debajo del texto */
+    left: 0;
+    transform: scaleX(0); /* Empieza invisible */
+    transition: transform 3s ease; /* Efecto de transición */
+   
+}
+
+#izquierdaTextoFoto1 h3 .subrayado.show::after {
+    transform: scaleX(1); /* Muestra el subrayado cuando se aplica la clase 'show' */
+}
+
+
+
+
+
+
+
+
+#izquierdaFoto1 img {
+    width: 100%;
+    display: block;
+    transition: transform 0.3s ease; /* Transición para suavizar el efecto de ampliación */
+}
+
+#izquierdaFoto1:hover img {
+    transform: scale(1.1); /* Ampliar la imagen al pasar el cursor sobre ella */
+}
+
+
+/* Estilo para el subrayado */
+#derechaTextoFoto1{
+    padding: 5%;
+}
+#derechaTextoFoto1 h3 {
+    position: relative;
+    
+  
+}
+
+#derechaTextoFoto1 h3 .subrayado::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 15px;
+    background-color: rgba(76, 179, 208, 0.63); /* Color de la franja */
+    position: absolute;
+    bottom: 0.5px; /* Posicionamiento debajo del texto */
+    left: 0;
+    transform: scaleX(0); /* Empieza invisible */
+    transition: transform 3s ease; /* Efecto de transición */
+   
+}
+
+#derechaTextoFoto1 h3 .subrayado.show::after {
+    transform: scaleX(1); /* Muestra el subrayado cuando se aplica la clase 'show' */
+}
+
+
+
+
+/*PREGUNTAS/RESPUESTA*/
+.preguntas{
+    background: linear-gradient(to bottom, #43207c,rgba(146, 32, 154, 0.565) ); 
+}
+
+.faq {
+    max-width: auto;
+    margin: 0 auto;
+    padding: 10%;
+    text-align: center; /* Centrar el contenido */
+  }
+  
+ .faq h2 {
+    font-size:65px; /* Tamaño de fuente de 5rem */
+    padding-bottom: 5%;
+    color: #c728d9;
+    
+  }
+  
+  .pregunta {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .pregunta li {
+    margin-bottom: 40px; /* Aumentar el margen inferior */
+  }
+  
+  .question {
+    background-color: #0e4d6a00;
+
+    cursor: pointer;
+    font-size: 2rem; /* Tamaño de fuente más grande */
+    width: 80%; /* Ocupar un ancho del 80% */
+    margin: 0 auto; /* Centrar el elemento */
+    text-align: left; /* Justificar al principio */
+    color:#fff;
+  }
+  
+  .answer {
+    background-color: #e7e4e700;
+    display: none;
+    padding: 20px; /* Aumentar el padding */
+    font-size: 1.2rem; /* Tamaño de fuente más grande */
+    width: 80%; /* Ocupar un ancho del 80% */
+    margin: 0 auto; /* Centrar el elemento */
+    text-align: left; /* Justificar al principio */
+    border:1px solid #fff;
+    color:#fafafb;
+    border-radius: 20px;
+
+
+  }
+  
+  .question.active .toggle::after {
+    content: "-";
+  }
+  
+  .question .toggle::after {
+    content: "+";
+  }
+  
+  .answer.active {
+    display: block;
+  }
+  
+/*FORMULARIO*/
+.formulario-contacto {
+    display: flex;
+    justify-content: center;
+    padding: 7%;
+    background: linear-gradient(to bottom, rgba(146, 32, 154, 0.565), #43207c);
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.tarjeta-contacto {
+    background-color: rgba(47, 15, 98, 0.249);
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.contenido_formulario {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    padding: 0;
+}
+
+.informacion-contacto {
+    flex: 1;
+    margin-right: 5%;
+}
+
+.contacto-info {
+    width:auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.informacion-contacto h2 {
+    font-size: 80px;
+    margin: 0; /* Eliminar margen */
+    padding-bottom: 5%;
+    color: #fff;
+    
+}
+
+.informacion-contacto  p {
+    margin-bottom: 40px;
+    font-size: 25px;
+    color: #fff;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items:start;
+    padding-bottom: 3%;
+    padding-top: 5%;
+    
+}
+input{
+    border-radius: 50px;
+    width: 100%;
+    border:none;
+   
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 20px;
+    margin-right: 10px;
+    
+    
+}
+
+.buttonContacto  {
+    padding: 10px 80px; /* Aumentar el espacio del botón */
+    background-color: #ee4fdb8e;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 10px; /* Añadir margen arriba */
+    margin-bottom: 40px;
+}
+
+
+.contacto-item {
+    display: flex;
+    align-items: center;
+    padding: 50px;
+    color:#f6f6f7;
+    
+}
+
+.contacto-item i {
+ 
+    color:#f6f6f7;
+}
+
+/*FOOTER*/
+footer {
+    background-color: #44207c; /* Fondo azul */
+    color: #fff; /* Texto blanco */
+    padding: 50px 0; /* Espacio interno */
+    
+}
+
+.container_footer {
+    text-align: center; /* Centrar texto */
+}
+
+.container_footer h4 {
+    margin-bottom: 20px; /* Separación entre títulos y listas */
+}
+
+.container_footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.container_footer ul li {
+    margin-bottom: 10px; /* Separación entre elementos de la lista */
+}
+
+.container_footer ul li a {
+    color: #fff; /* Enlaces blancos */
+    text-decoration: none; /* Sin subrayado */
+    font-weight: bold; /* Texto en negrita */
+    transition: color 0.3s; /* Transición de color suave */
+    position: relative;
+}
+
+.container_footer ul li a:hover {
+    color: #d15bc9; /* Cambio de color al pasar el mouse */
+}
+
+
+.submenu_footer ul {
+    display: none;
+    position: absolute;
+    background-color: #3498db;
+    width: 150px;
+    padding: 10px 0;
+    left: 100%; /* Mueve el submenú a la derecha */
+    top: 0;
+    z-index: 1;
+}
+
+.submenu_footer:hover ul {
+    display: block;
+}
+
+.submenu_footer ul li {
+    text-align: center;
+}
+
+.submenu_footer ul li a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 5px 0;
+}
+
+/* Ajustes adicionales para la columna de Páginas Web */
+.col-md-4 {
+    position: relative; /* Asegura que la columna tenga una posición relativa */
+}
+
+.submenu_footer ul {
+    left: calc(60% + 10px); /* Desplaza el submenú a la derecha */
+    top: 0;
+    background-color: #43207c00;
+    border:1px solid #fff;
+    border-radius: 15px;
+}
+
+@media screen and (max-width:1188px){
+    .logo img{
+        width:200px;
+    }
+.contenedor-header header nav ul li a {
+    font-size: 16px;
+    margin: 20px;
+    
+}
+.contenedor-header header nav ul{
+    padding: 0;
+}
+}
+@media screen and (max-width: 980px) {
+    .inicio input {
+        width: 90%;
+        
+    }
+    .card-text{
+        
+        display: grid;
+        justify-content: center;
+    }
+    .one-page-card h1, .sitio-web-card h1, .tienda-en-linea-card h1, .diseno-grafico-card h1, .marketing-digital-card h1 {
+        display: flex;
+        justify-content: center;
+
+    }
+    .contenido {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .izquierda {
+        width: 100%;
+        text-align: center;
+    }
+
+    .izquierda p {
+        text-align: left;
+    }
+
+    .derecha {
+        width: 100%;
+    }
+
+    .fondo1 {
+        height: auto;
+        padding-top: 0;
+    }
+
+    .fondo {
+        height: auto;
+        background: #44207c;
+    }
+
+    .container .card {
+        width: 700px;
+        height: 550px;
+    }
+
+    .sesgoabajo-unico,
+    .sesgoarriba {
+        display: none;
+    }
+
+
+.flip-card-front img {
+    
+    width:400px;
+    height: 400px;
+}
+.flip-card-back p{
+    font-size: 45px;
+}
+.flip-card-front h5{
+    font-size: 40px;
+}
+
+
+#whatsapp img{
+    width:  50px;
+    height: 5px;
+    }
+header{
+    height: 200px;
+}
+
+header .logo img{
+    width: 400px;
+    height:400px;
+    padding: 0;
+}
+
+
+.nav-responsive i{
+  font-size: 60px;
+ 
+}
+nav{
+    display: none;
+}
+.nav-responsive{
+    display: block;
+ 
+}
+nav.responsive{
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 250px;
+    background-color: #fff;
+    width: 600px;
+    height:auto;
+    border: 2px solid #04b7b7;
+    border-radius: 50px;
+
+}
+nav.responsive ul{
+    display: block !important;
+  
+  
+    
+}
+nav.responsive ul li {
+    font-size: 50px;
+ 
+    padding: 30px;
+    
+    
+   
+}
+
+.contenedor-header header nav ul li a{
+    font-size: 50px;
+}
+.contenedor-header header {
+    max-width: 100%;
+    height: 250px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 80px;
+    
+}
+.textoPortada {
+   
+    margin-top: 150px;
+}
+}
+/* Estilos generales */
+/* Estilos generales */
+
+.card-text {
+    color: #f4f9f9;
+    font-size: 30px;
+}
+
+.card-text ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+.card-image-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.card-image {
+    width: 100%;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .container{
+        width: auto;
+        height: auto;
+    }
+    .container .card {
+        width: auto;
+        height: auto;
+    }
+    .flip-card-inner {
+        width: 100%;
+        height: 100%;
+    }
+  
+    .flip-card-front img {
+        width: 100px;
+        height: 200px;
+        
+    }
+    .flip-card-back p {
+        font-size: 1.2rem;
+        padding: 20px;
+        text-align: center;
+    }
+}

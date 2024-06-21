@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Impulsamos tu presencia en línea con páginas web atractivas, servicios de SEO personalizados y gestión profesional de redes sociales. Destaca en Google con nuestro enfoque integral para mejorar tu visibilidad y atraer a tu audiencia. ¡Descubre cómo podemos potenciar tu presencia digital hoy!"">
+    <meta name="keywords" content="páginas web, diseño web, desarrollo web, SEO, gestión de redes, marketing digital, presencia en línea, estrategias SEO, optimización web, redes sociales">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous" type="text/css">
+    <link rel="stylesheet" href="estilo1.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <title>One Page</title>
+</head>
+<body>
+    <div class="contenedor-total">   
+        <div class="contenedor-header">
+            <header>
+                <a href="../index.html" onclick="seleccionar()">
+                    <div class="logo">
+                        <img src="../img/WebVisionSeo.svg" alt="Diseño pagina web" >
+                    </div>
+                </a>
+                <nav id="nav">
+                    <ul>
+                        <li><a href="../index.html" onclick="seleccionar()">Inicio</a></li>
+                        <li><a href="#" onmouseenter="mostrarSubMenu()" onmouseleave="ocultarSubMenu()">Páginas Web<i class="fas fa-chevron-down" style="margin-left: 10px; font-size: 15px; vertical-align: middle;"></i></a>
+                            <!-- Submenu -->
+                            <ul id="submenu" onmouseenter="cancelarOcultarSubMenu()" onmouseleave="ocultarSubMenu()">
+                                <li><a href="OnePage.html">One Page</a></li>
+                                <li><a href="sitioWeb.html">Sitio Web </a></li>
+                                <li><a href="tiendaEnLinea.html">Tienda en Linea</a></li>
+                                
+                            </ul>
+                        </li>
+                        <li><a href="..disenoGrafico.html" onclick="seleccionar()">Diseño Gráfico</a></li>
+                        <li><a href="#" onmouseenter="mostrarSubMenu1()" onmouseleave="ocultarSubMenu1()">Marketing Digital<i class="fas fa-chevron-down" style="margin-left: 10px; font-size: 15px; vertical-align: middle;"></i></a>
+                            <!-- Submenu -->
+                            <ul id="submenu1" onmouseenter="cancelarOcultarSubMenu1()" onmouseleave="ocultarSubMenu1()">
+                                <li><a href="marketingDigital.html">Seo</a></li>
+                                <li><a href="marketingDigital.html">Sem</a></li>
+                                <li><a href="marketingDigital.html">Redes Sociales</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="paginas/nosotros.html" onclick="seleccionar()">Nosotros</a></li>
+                        <div class="botones-navegacion">
+                            <a href="paginas/contacto.html"><button class="botonnav1">Contacto</button></a>
+                        </div>                                       
+                    </ul>
+                </nav>
+            </header>
+        </div>
+        </div> 
+        <section class="inicio_sitioweb" id="inicio_sitioweb">
+            <div class="overlay_sitioweb"></div> <!-- Contenedor para el filtro de color -->
+            <video autoplay muted loop id="video-background">
+                <source src="../img/fondositioweb.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="acerca-de_sitioweb">
+                <!-- Contenido de la sección "acerca-de" -->
+                <div class="container_sitioweb-fluid">
+                    <div class="row justify-content-center">
+                        <div class="col-6 col-md-10">
+                            <div class="col-12">
+                                <h1 class="textoPortada_sitioweb">¡Diseña tu futuro digital! </h1>
+                                <p class="parrafoPortada_sitioweb"><span class="blueText">Sitio Web</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> 
+       
+    <section class="sitioweb">
+        <div class="contenido_sitioweb container">
+            <div class="row">
+                <div class="col-lg-6 col-sm-12">
+                    <h2 class="titulo_sitioweb">DISEÑO DE PAGINAS WEB</h2>
+                    <h3 class="subtitulo_sitioweb">Diseñamos la web que tu negocio necesita</h3>
+                    <p class="parrafo_sitioweb">Adaptada a las necesidades específicas de tu negocio. Diseño de páginas web: corporativas, blogs, webs para restaurantes, diseño de tiendas online, webs personales o portfolio, webs institucionales…</p>
+                    <p class="parrafo_sitioweb">"Potenciamos la visibilidad de tu negocio en Internet"</p>
+                    <button class="boton_sitioweb">No lo dudes más, ¡Empieza ahora!</button>
+                </div>
+                
+                <div class="col-lg-6 col-sm-12 mt-3">
+                    <img src="../img/Diseño sin título (2).png" alt="Descripción de la imagen" class="imagensitioweb">
+                </div>
+            </div>
+        </div>
+    </section> 
+    <section class="webProfesionales">
+        <div class="contenedor text-center">
+            <h1 class="titulo_Tarjetas" >PAGINAS WEB PROFESIONALES </h1>
+                <div class="row justify-content-center">
+                    <div class="col-lg-3 col-md-12 col-sm-12  mb-4">
+                        <div class="tarjeta_sitioweb text-center">
+                            <div class="tarjetasitioweb-cuerpo">
+                                <img src="../img/google-svgrepo-com.svg" alt="Icono" class="icono_final">
+                                <h1 class="tarjetasitioweb-titulo">Optimizado para Google</h1><br/>
+                                <p class="tarjetasitioweb-texto">Diseño de páginas web que posicionan. Mejoras técnicas, estructuración de URLs y palabras clave para que tu web consiga un buen posicionamiento en Google.</p>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-12 col-sm-12  mb-4">
+                        <div class="tarjeta_sitioweb text-center">
+                            <div class="tarjetasitioweb-cuerpo">
+                                <img src="../img/phone-mobile-svgrepo-com (1).svg" alt="Icono" class="icono_final">
+                                <h1 class="tarjetasitioweb-titulo">Páginas web responsive</h1><br/>
+                                <p class="tarjetasitioweb-texto">Diseño web que se adapta de forma automática a cualquier tamaño de pantalla. Creamos webs 100% adaptadas a dispositivos móviles y tablets.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-12 col-sm-12  mb-4">
+                        <div class="tarjeta_sitioweb text-center">
+                            <div class="tarjetasitioweb-cuerpo">
+                                <img src="../img/security-secure-protection-30-svgrepo-com (1).svg" alt="Icono" class="icono_final1">
+                                <h1 class="tarjetasitioweb-titulo">Páginas web seguras</h1><br/>
+                                <p class="tarjetasitioweb-texto">Confianza y seguridad online para los usuarios que visiten tu web. Con un certificado de seguridad SSL, los datos son cifrados y protegidos de manera segura.</p>
+                               
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>        
+            </div>
+           
+        </section>  
+        
+        <section id="container_influye">
+            <div class="container" >
+                <div class="row">
+                    <div class="col-12 text-center" >
+                        <h1 id="titulo_incluye">INCLUIDO EN EL DISEÑO DE TU PÁGINA WEB</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 col-sm-12 mb-4">
+                        <div class="d-flex align-items-center">
+                            <img src="../img/domain-registration-svgrepo-com.svg" alt="Icono 1" class="img-fluid mr-3" style="width: 100px; height: 100px;padding: 20px;margin: 0;">
+                            <p class="texto">Dominio y Hosting gratis el primer año</p>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <img src="../img/wordpress-svgrepo-com.svg" alt="Icono 1" class="img-fluid mr-3" style="width: 100px; height: 100px;padding: 20px;margin: 0;">
+                            <p class="texto">Desarrollo en WordPress</p>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <img src="../img/cloud-computing-servers-svgrepo-com.svg" alt="Icono 1" class="img-fluid mr-3" style="width: 100px; height: 100px;padding: 20px;margin: 0;">
+                            <p class="texto">Indexación en buscadores</p>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <img src="../img/analytics-svgrepo-com (2).svg" alt="Icono 1" class="img-fluid mr-3" style="width: 100px; height: 100px;padding: 20px;margin: 0;">
+                            <p class="texto">Configuración Google Analytics</p>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <img src="../img/devices-svgrepo-com.svg" alt="Icono 1" class="img-fluid mr-3" style="width: 100px; height: 100px;padding: 20px;margin: 0;">
+                            <p class="texto">Diseño 100% adaptado a móviles</p>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <img src="../img/expand-alt-1-svgrepo-com.svg" alt="Icono 1" class="img-fluid mr-3" style="width: 100px; height: 100px;padding: 20px;margin: 0;">
+                            <p class="texto">Diseño ampliable</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-sm-12 mb-4">
+                        <div class="d-flex align-items-center">
+                            <img src="../img/security-system-lock-svgrepo-com.svg" alt="Icono 2" class="img-fluid mr-3" style="width: 100px; height: 100px;padding: 20px;margin: 0;">
+                            <p class="texto">Certificado de seguridad SSL</p>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <img src="../img/seo-1-svgrepo-com.svg" alt="Icono 2" class="img-fluid mr-3" style="width: 100px; height: 100px;padding: 20px;margin: 0;">
+                            <p class="texto">Optimización SEO</p>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <img src="../img/speed-grader-svgrepo-com.svg" alt="Icono 2" class="img-fluid mr-3" style="width: 100px; height: 100px;padding: 20px;margin: 0;">
+                            <p class="texto">Accesibilidad, velocidad y carga rápida</p>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <img src="../img/copy-course-svgrepo-com (1).svg" alt="Icono 2" class="img-fluid mr-3" style="width: 100px; height: 100px;padding: 20px;margin: 0;">
+                            <p class="texto">Copia de seguridad</p>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <img src="../img/adjust-svgrepo-com.svg" alt="Icono 2" class="img-fluid mr-3" style="width: 100px; height: 100px;padding: 20px;margin: 0;">
+                            <p class="texto">2 modificaciones al mes</p>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <img src="../img/email-18-svgrepo-com.svg" alt="Icono 2" class="img-fluid mr-3" style="width: 100px; height: 100px;padding: 20px;margin: 0;">
+                            <p class="texto">Cuentas de correo</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+    
+    <section class="sitioweb">
+        <div class="contenido_sitioweb container">
+            <div class="row">
+                <div class="col-lg-6 col-sm-12" style="padding-right: 10%;padding-top: 4%;">
+                    <h2 class="titulo_sitioweb">DISEÑO MODERNO Y ÚNICO</h2>
+                    <p class="parrafo_sitioweb">Diseños modernos y atractivos que atraen clientes y venden! Navegación intuitiva y rápida desde cualquier dispositivo y tamaño de pantalla.</p>
+                    <h3 class="subtitulo_sitioweb">Mejoramos tu presencia online!</h3>
+                    <button class="boton_sitioweb">¡Empieza ahora!</button>
+                </div>
+                
+                <div class="col-lg-6 col-sm-12 mt-3">
+                    <img src="../img/fotoweb1.png" alt="Descripción de la imagen" class="imagensitioweb" id="imagen1">
+                    <img src="../img/fotoweb3.png" alt="Descripción de la imagen" class="imagensitioweb" id="imagen2" style="display:none;">
+                    <img src="../img/fotoweb4.png" alt="Descripción de la imagen" class="imagensitioweb" id="imagen3" style="display:none;">
+                    <img src="../img/fotoweb5.png" alt="Descripción de la imagen" class="imagensitioweb" id="imagen4" style="display:none;">
+                    <img src="../img/fotoweb6.png" alt="Descripción de la imagen" class="imagensitioweb" id="imagen5" style="display:none;">
+                </div>
+            </div>
+        </div>
+    </section>  
+         
+   
+    
+    <section class="que-necesitas">
+        
+            <h2 class="text-center">¿POR QUÉ NECESITAS UNA WEB<br/>
+                ÚNICA PARA TU NEGOCIO?</h2>
+                <div class="contenedor_necesitas">
+            <div class="row" id="columnas">
+                <div class="col-lg-4 col-sm-12" id="columna">
+                    
+                    <img src="../img/seo-analytics-team-animate.svg" alt="Imagen 1" class="img-fluid">
+                    <h3 class="text-center">Visibilidad para tu negocio</h3>
+                    <p class="text-center">Aprovecha las herramientas de marketing digital para llegar a más usuarios.</p>
+                </div>
+            
+                <div class="col-lg-4 col-sm-12" id="columna">
+                    <img src="../img/mobile-marketing-animate.svg" alt="Imagen 2" class="img-fluid">
+                    <h3 class="text-center">Captación de clientes</h3>
+                    <p class="text-center">Muestra tus productos y servicios al mundo. Convierte visitas en clientes.</p>
+                </div>
+                <div class="col-lg-4 col-sm-12" id="columna">
+                    <img src="../img/google-sitemap-animate.svg" alt="Imagen 3" class="img-fluid">
+                    <h3 class="text-center">Imagen profesional</h3>
+                    <p class="text-center">Tu negocio transmitirá confianza y profesionalidad gracias a una web rápida e intuitiva.</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section class="sitioweb" style="background-color: black;">
+        <div class="contenido_sitioweb container">
+            <div class="row">
+                <div class="col-lg-6 col-sm-12 mt-3">
+                    <img src="../img/google-2.webp" alt="Descripción de la imagen" class="imagensitioweb">
+                </div>
+                <div class="col-lg-6 col-sm-12" style="padding: 5%;">
+                    <h3 class="subtitulo_sitioweb" style="color:rgb(22, 190, 216);">Eres lo que comunicas, y como lo comunicas.</h3>
+                    <h2 class="titulo_sitioweb" style="color:#fff;font-size: 50px;">¿Tu negocio todavía no tiene una página web?</h2>  
+                    <button class="boton_sitioweb1">No lo dudes más, ¡Empieza ahora!</button>
+                </div>
+                
+                
+            </div>
+        </div>
+    </section> 
+    <section class="seccion-filas">
+        <div class="mi-container">
+            <div class="row">
+                <div class="col-12 text-center mb-4">
+                    <h1 id="titulo_contratar">¿POR QUÉ ELEGIRNOS PARA EL DISEÑO DE TU WEB?</h1>
+                    <h1 id="subtitulo_contratar">Nos implicamos en tu proyecto</h1>
+                    <p id="texto_contratar">Te ayudamos y asesoramos para mejorar la visibilidad de tu negocio e imagen de marca en Internet.</p>
+                </div>
+            </div>
+            <!-- Filas de contenido -->
+            <div class="row">
+                <!-- Primera fila -->
+                <div class="col-lg-4  col-sm-12 mb-4">
+                    <div class="fila">
+                        <div class="izquierdaFoto1">
+                            <img src="../img/foto1.jpg" alt="Descripción de la imagen 1">
+                        </div>
+                        
+                    </div>
+                    <div class="fila">
+                        
+                        <div class="derechaTextoFoto1">
+                            <h3>Somos un socio <span class="subrayado">fuerte para su negocio</span></h3>
+                        </div>
+                    </div>
+                </div>
+                <!-- Segunda fila -->
+                <div class="col-lg-4  col-sm-12 mb-4">
+                    <div class="fila">
+                        <div class="izquierdaFoto1">
+                            <img src="../img/foto2.jpg" alt="Descripción de la imagen 2">
+                        </div>
+                        
+                    </div>
+                    <div class="fila">
+                        
+                        <div class="derechaTextoFoto1">
+                            <h3>Un diseño <span class="subrayado">extraordinario</span></h3>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tercera fila -->
+                <div class="col-lg-4  col-sm-12 mb-4">
+                    <div class="fila">
+                        <div class="izquierdaFoto1">
+                            <img src="../img/foto3.jpg" alt="Descripción de la imagen 1">
+                        </div>
+                        
+                    </div>
+                    <div class="fila">
+                        
+                        <div class="derechaTextoFoto1">
+                            <h3>Rapidez <span class="subrayado">en todas las áreas</span></h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Segunda fila -->
+            <div class="row">
+                <!-- Cuarta fila -->
+                <div class="col-lg-4  col-sm-12 mb-4">
+                    <div class="fila">
+                        <div class="izquierdaFoto1">
+                            <img src="../img/foto4.jpg" alt="Descripción de la imagen 2">
+                        </div>
+                        
+                    </div>
+                    <div class="fila">
+                        
+                        <div class="derechaTextoFoto1">
+                            <h3>Un buen posicionamiento <span class="subrayado">en buscadores</span> </h3>
+                        </div>
+                    </div>
+                </div>
+                <!-- Quinta fila -->
+                <div class="col-lg-4  col-sm-12 mb-4">
+                    <div class="fila">
+                        <div class="izquierdaFoto1">
+                            <img src="../img/mejor-empresa-de-diseno-a-medida-espana.gif" alt="Descripción de la imagen 1">
+                        </div>
+                        
+                    </div>
+                    <div class="fila">
+                        
+                        <div class="derechaTextoFoto1" style="background-color: rgba(250, 235, 215, 0.287);">
+                            <h3>100% <span class="subrayado">compatibles con móviles y tablets</span></h3>
+                        </div>
+                    </div>
+                </div>
+                <!-- Sexta fila -->
+                <div class="col-lg-4  col-sm-12 mb-4">
+                    <div class="fila">
+                        <div class="izquierdaFoto1">
+                            <img src="../img/foto6.jpg" alt="Descripción de la imagen 2">
+                        </div>
+                        
+                    </div>
+                    <div class="fila">
+                        
+                        <div class="derechaTextoFoto1">
+                            <h3>Diseñado <span class="subrayado">a medida</span></h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+ 
+     
+        
+        
+      
+        
+           
+            
+            
+            <section class="contacto">
+                <div class="container-whatsapp fixed-bottom fixed-right">
+                    <div class="row justify-content-center">
+                        <div class="col-4 col-md-2">
+                            <a id="whatsapp" href="https://wa.me/+34618799536" target="_blank" onmouseover="showCustomTooltip()" onmouseout="hideCustomTooltip()">
+                                <img src="../img/whatsapp.svg" alt="WhatsApp">
+                            </a>
+                            <div id="custom-tooltip" style="visibility: hidden;">
+                                Contacta con nosotros
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+                         
+            
+            
+            <section class="preguntas">
+                <div class="faq">
+                    <h2>Preguntas frecuentes</h2>
+                    <ul class="pregunta">
+                      <li>
+                        <div class="question">
+                          <span class="toggle"></span> ¿Cómo trabajamos en WebVisionSeo?
+                        </div>
+                        <div class="answer">Nuestra metodología de trabajo compartida le permitirá ser el protagonista para la aprobación y el paso a siguientes fases, siempre contando con el asesoramiento de expertos en e-Commerce que le ayudarán y guiarán en todo momento para que sigas mejorando.
+                
+                           <br/><br/> Gracias a nuestro equipo de expertos con más de 10 años de experiencia, conseguiremos crear y preparar una tienda online profesional capaz de competir con las tiendas online de su sector.
+                            
+                            <br/><br/>Al inicio definimos sus requerimientos, en base a lo cual preparamos la arquitectura, el diseño y seleccionamos las tecnologías más adecuadas. Tendrá todos los detalles cuidadosamente documentados y anclado en la documentación del proyecto. En las fases individuales, le informaremos periódicamente sobre el avance del proyecto, para que usted tenga un control total sobre su avance.
+                            
+                            <br/><br/>Nos basamos en comunicación transparente, contratos claros, documentación bien definida, y en plazos de entrega firmes.
+                            
+                            <br/><br/>Para obtener más información sobre el proceso y las fases individuales, visite página de Procesos</div>
+                      </li>
+                      <li>
+                        <div class="question">
+                          <span class="toggle"></span> ¿Necesito tener un hosting antes de empezar?
+                        </div>
+                        <div class="answer">No, si no tiene un hosting, haremos todo el proceso de registración un hosting y dominio con usted.</div>
+                      </li>
+                      <li>
+                        <div class="question">
+                          <span class="toggle"></span> ¿Cómo puedo estar seguro de la calidad del trabajo?
+                        </div>
+                        <div class="answer" >Antes de empezar, le proporcionaremos la documentación detallada del proyecto con todos los detalles, para que pueda estar muy seguro del resultado.
+                
+                            <br/><br/>En nuestro equipo tenemos arquitectos, diseñadores, desarrolladores y testers experimentados, que van a ir muy profundo para analizar, disenar, desarrollar y verificar toda la funcionalidad, el diseño, la compatibilidad móvil y la velocidad de su sitio web.</div>
+                      </li>
+                      <li>
+                        <div class="question">
+                          <span class="toggle"></span> ¿tienen algunas referencias?
+                        </div>
+                        <div class="answer">Sí, por supuesto, somos una empresa profesional con 5 años de experiencia.
+                            Entre nuestros clientes son empresas medianas, grandes e internacionales.
+                            
+                          <br/><br/>  Sobre la calidad de nuestro trabajo se puede asegurar en la sección de proyectos realizados.</div>
+                      </li>
+                      <li>
+                        <div class="question">
+                          <span class="toggle"></span> ¿Se puede crear una web desde 0, sin utilizar un tema prediseñado de WordPress?
+                        </div>
+                        <div class="answer">Sí, por supuesto, para nuestros clientes estamos creando sitios web con y sin plantillas, desde 0.
+                            
+                            <br/><br/>Si necesita, nuestro equipo de diseñadores experimentados preparará un diseño profesional desde 0 y nuestro desarrollador convertirá este hermoso diseño en un gran sitio web.
+                            
+                            <br/><br/>Y si usted busca una solución más económica podemos utilizar uno de nuestros diseños pre-preparados.</div>
+                      </li>
+                      <li>
+                        <div class="question">
+                          <span class="toggle"></span> ¿Y la velocidad de la Web?
+                        </div>
+                        <div class="answer">Tenemos mucha experiencia en acelerar sitios web y todas nuestras webs construimos con las tecnologías más avanzadas, para garantizar la mejor velocidad de carga posible.
+                
+                           <br/><br/> Si usted tenga problema con la velocidad de su web actual, no dude ponerse en contacto con nosotros, con mucho gusto realizamos la analisis profunda de su web, tecnologías, plugins y disenamos la solucion para mejorar la velocidad de su web actual.</div>
+                      </li>
+                      <li>
+                        <div class="question">
+                          <span class="toggle"></span> ¿En que consiste el servicio de desarrollo e-commerce?
+                        </div>
+                        <div class="answer">Nuestras tiendas online están desarrolladas con una plataforma profesional que nos brinda la flexibilidad de adaptar y programar cualquier funcionalidad que necesites creando tiendas sin limitaciones para crecer.
+                
+                
+                            <br/><br/>Nuestros diseños se realizan a medida desde cero, tras escuchar las necesidades y realizar un estudio del sector del proyecto.
+                            
+                            
+                            <br/><br/>Realizamos un diseño moderno pero siempre cuidando los detalles de UX para facilitar la navegación, aumentar las conversiones y genera confianza a los clientes.
+                            
+                            <br/><br/>Todo estará adaptado para Dispositivos móviles, con lo cual diseñaremos todas las pantallas para Desktop (PC) / Tablet y Móvil.
+                            
+                            <br/><br/>A nuestros clientes ofrecemos tanto el servicio de desarrollo avanzado para gran empresas, como sitios web ecommerce básico, para las empresas que están en el proceso de creación. No dude ponerse en contacto con nuestros expertos para pedir más detalles.</div>
+                      </li>
+                      <li>
+                        <div class="question">
+                          <span class="toggle"></span> ¿Cuanto me costará ser visible en internet?
+                        </div>
+                        <div class="answer">Estamos especializados en el diseño y desarrollo de sitios web de alta calidad. Por lo tanto, no tenemos precios “únicos”, sino que calculamos el presupuesto en base a las necesidades y requerimientos del cliente.
+                
+                           <br/><br/> En general, podemos ofrecerle tres tarifas para desarrollar su sitio web, en base a sus necesidades puede elegir: Básico, Avanzado o Sitio web completamente diseñado a medida.
+                            
+                           <br/><br/>El presupuesto de su proyecto depende de sus necesidades y expectativas, así como de la complejidad de la web y de las tecnologías utilizadas.
+                            
+                           <br/><br/> No facturamos horas, sino proyectos completos. Así que el precio total del proyecto completo, así como el desglose detallado del precio se preparará y formará parte del contrato antes de que empecemos con la palabra.
+                            
+                           <br/><br/> Así puede estar seguro de los costes finales del trabajo incluso antes de que empecemos.
+                            
+                           <br/><br/>El pago se realiza en dos etapas: la primera a mitad del trabajo, para que pueda ver y estar seguro de la calidad antes de enviarnos el primer pago. La segunda parte se realiza cuando el proyecto está formalmente cerrado, revisado y confirmado por su parte.
+                            
+                            No dude en ponerse en contacto con uno de nuestros amables compañeros del departamento de ventas para conocer nuestros precios.</div>
+                      </li>
+                      <li>
+                        <div class="question">
+                          <span class="toggle"></span> ¿Necesito tener un hosting antes de empezar?
+                        </div>
+                        <div class="answer" >Explicación sobre los requisitos previos para comenzar un proyecto con nosotros.</div>
+                      </li>
+                      <li>
+                        <div class="question">
+                          <span class="toggle"></span> ¿Necesito tener un hosting antes de empezar?
+                        </div>
+                        <div class="answer" >Explicación sobre los requisitos previos para comenzar un proyecto con nosotros.</div>
+                      </li>
+                      <!-- Aquí van las demás preguntas y respuestas -->
+                    </ul>
+                  </div>
+                </section>   
+                <section class="formulario-contacto">
+                    <div class="tarjeta-contacto">
+                        <div class="contenido_formulario">
+                            <div class="informacion-contacto">
+                                <h2 style="color:mediumturquoise">Te asesoramos</h2>
+                                <p >Solo déjanos tu nombre y teléfono(opcional un horario)</p>
+                                <form action="https://formspree.io/f/mzbnkdze" method="POST" >
+                                    <input type="text" id="nombre" name="nombre" placeholder="Nombre y teléfono">
+                                    <br/>                  
+                                    <button class="buttonContacto" type="submit" >Enviar</button>
+                                </form>
+                                
+                                <p >Te proporcionamos más información, despejamos dudas y entendemos mejor la idea de tu negocio.</p>
+                            </div>
+                            <div class="contacto-info">
+                                <div class="contacto-item">
+                                    <i class="fas fa-phone" style="font-size: 80px; width: 83px;color:mediumturquoise"></i>                   
+                                </div>
+                                <span style="color:mediumturquoise">Teléfono: (123) 456-7890</span>
+                                <div class="contacto-item">
+                                    <i class="fas fa-envelope" style="font-size: 80px; width: 83px;color:mediumturquoise"></i>
+                                    
+                                </div>
+                                <span style="color:mediumturquoise">Correo: ejemplo@example.com</span>
+                               
+                                <div class="contacto-item">
+                                    <i class="fab fa-whatsapp" style="font-size: 80px; width: 83px;color:mediumturquoise"></i>
+                                    
+                                </div>
+                                <span style="color:mediumturquoise">WhatsApp: (123) 456-7890</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>   
+       
+        <footer>
+            <div class="container_footer">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h4>Site Map</h4>
+                        <ul>
+                            <li><a href="#">Inicio</a></li>
+                            <li class="submenu_footer">
+                                <a href="#">Páginas Web</a>
+                                <ul>
+                                    <li><a href="#">One Page</a></li>
+                                    <li><a href="#">Sitio Web</a></li>
+                                    <li><a href="#">Tienda en linea</a></li>
+                                   
+                                    <!-- Agrega más opciones si es necesario -->
+                                </ul>
+                            </li>
+                            <li><a href="#">Diseño Gráfico</a></li>
+                            <li><a href="#">Nosotros</a></li>
+                            <li><a href="#">Contacto</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <h4>Política de Privacidad</h4>
+                        <ul>
+                            <li><a href="#">Términos y Condiciones</a></li>
+                            <li><a href="#">Aviso Legal</a></li>
+                            <li><a href="#">Política de Cookies</a></li>
+                            <li><a href="#">Política de Privacidad</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <h4>Redes Sociales</h4>
+                        <ul>
+                            <li><a href="#">Facebook</a></li>
+                            <li><a href="#">Twitter</a></li>
+                            <li><a href="#">Instagram</a></li>
+                            <li><a href="#">LinkedIn</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+            
+        
+         
+        <script src="../script.js"></script>
+        <script>
+            $(document).ready(function() {
+    $(window).on('scroll', function() {
+        var windowHeight = $(window).height();
+        var scrollPos = $(window).scrollTop();
+
+        $('.subrayado').each(function() {
+            var offsetTop = $(this).offset().top;
+            if (scrollPos > offsetTop - windowHeight + 100) {
+                $(this).addClass('show');
+            }
+        });
+    });
+});
+        </script>
+</body>
+</html>

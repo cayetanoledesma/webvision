@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Impulsamos tu presencia en línea con páginas web atractivas, servicios de SEO personalizados y gestión profesional de redes sociales. Destaca en Google con nuestro enfoque integral para mejorar tu visibilidad y atraer a tu audiencia. ¡Descubre cómo podemos potenciar tu presencia digital hoy!"">
+    <meta name="keywords" content="páginas web, diseño web, desarrollo web, SEO, gestión de redes, marketing digital, presencia en línea, estrategias SEO, optimización web, redes sociales">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous" type="text/css">
+    <link rel="stylesheet" href="estilo1.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <title>One Page</title>
+</head>
+<body>
+    <div class="contenedor-total">   
+        <div class="contenedor-header">
+            <header>
+                <a href="../index.html" onclick="seleccionar()">
+                    <div class="logo">
+                        <img src="../img/WebVisionSeo.svg" alt="Diseño pagina web" >
+                    </div>
+                </a>
+                <nav id="nav">
+                    <ul>
+                        <li><a href="../index.html" onclick="seleccionar()">Inicio</a></li>
+                        <li><a href="#" onmouseenter="mostrarSubMenu()" onmouseleave="ocultarSubMenu()">Páginas Web<i class="fas fa-chevron-down" style="margin-left: 10px; font-size: 15px; vertical-align: middle;"></i></a>
+                            <!-- Submenu -->
+                            <ul id="submenu" onmouseenter="cancelarOcultarSubMenu()" onmouseleave="ocultarSubMenu()">
+                                <li><a href="OnePage.html">One Page</a></li>
+                                <li><a href="sitioWeb.html">Sitio Web </a></li>
+                                <li><a href="tiendaEnLinea.html">Tienda en Linea</a></li>
+                                
+                            </ul>
+                        </li>
+                        <li><a href="..disenoGrafico.html" onclick="seleccionar()">Diseño Gráfico</a></li>
+                        <li><a href="#" onmouseenter="mostrarSubMenu1()" onmouseleave="ocultarSubMenu1()">Marketing Digital<i class="fas fa-chevron-down" style="margin-left: 10px; font-size: 15px; vertical-align: middle;"></i></a>
+                            <!-- Submenu -->
+                            <ul id="submenu1" onmouseenter="cancelarOcultarSubMenu1()" onmouseleave="ocultarSubMenu1()">
+                                <li><a href="marketingDigital.html">Seo</a></li>
+                                <li><a href="marketingDigital.html">Sem</a></li>
+                                <li><a href="marketingDigital.html">Redes Sociales</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="paginas/nosotros.html" onclick="seleccionar()">Nosotros</a></li>
+                        <div class="botones-navegacion">
+                            <a href="paginas/contacto.html"><button class="botonnav1">Contacto</button></a>
+                        </div>                                       
+                    </ul>
+                </nav>
+            </header>
+        </div>
+        </div> 
+        <section class="inicio_onepage" id="inicio">
+            <div class="overlay_inicio"></div> <!-- Contenedor para el filtro de color -->
+            <video autoplay muted loop id="video-background">
+                <source src="../img/fondoonepage.mp4" type="video/mp4" >
+                Your browser does not support the video tag.
+            </video>
+            <div class="acerca-de">
+                <!-- Contenido de la sección "acerca-de" -->
+                <div class="container-fluid">
+                    <div class="row justify-content-center">
+                        <div class="col-6 col-md-10">
+                            <div class="col-12">
+                                <h1 class="textoPortada">¡Un Destino, Una Página! </h1>
+                                <p class="parrafoPortada"><span class="blueText">One Page</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> 
+        <section class="unaPagina">
+            <div class="contenido_unaPagina container">
+                <div class="row">
+                    <div class="col">
+                        <h2 class="tituloOnePage">¿Qué es una One Page?</h2>
+                        <p class="parrafoOnePage">Es la tarjeta de visita del siglo XXI puesta en el mayor escaparate del mundo. Este diseño web es la solución para profesionales que quieran mostrar sus servicios, productos y su aporte de valor, de forma sencilla.</p>
+                        <p class="parrafoOnePage">El contenido de un sitio web de una sola página se carga completamente en la página inicial, lo que lo hace fácil de usar. <br/>Los usuarios hacen clic en los enlaces de navegación o se desplazan hacia abajo para llegar a diferentes destinos o secciones de contenido.</p>
+                        <p class="parrafoOnePage">Mostrar todo el contenido en una sola página ahorra a los visitantes tiempo saltando entre páginas. <br/><br/>Este diseño web es el preferido para presentar un portafolio. Sin embargo, también aparecen con más frecuencia en sitios de productos, aplicaciones y, esencialmente, en cualquier cosa que no tenga mucho contenido.</p>
+                        <button class="botonOnePage">No lo dudes más, ¡Empieza ahora!</button>
+                    </div>
+                    <div class="col mt-3">
+                        <img src="../img/onepage.jpg" alt="Descripción de la imagen" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="beneficios">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 columna-derecha order-md-last">
+                        <p class="texto-grande">¿Qué Beneficios tiene nuestra One Page?</p>
+                        <p class="texto-pequeño">Estos 4 son algunos de los beneficios que tendrás con One Page. Este enfoque de diseño web te brinda la oportunidad de destacar tus servicios y productos de manera efectiva en un solo lugar. Si quieres más información o si tienes alguna duda, no dudes en consultarnos. Estamos aquí para ayudarte en cada paso del camino</p>
+                        <div class="contenedor-boton">
+                            <button class="botonBeneficios">No lo dudes más, ¡Empieza ahora!</button>
+                        </div>
+                    </div>
+                    <div class="col-md-6 columna-izquierda order-md-first">
+                        <div class="fila">
+                            <div class="tarjeta_beneficios">
+                                <h2>01.</h2>
+                                <h3>No cierra</h3>
+                                <p>Da igual, ya sea festivo o haya un estado de alarma, siempre puede estar activo.</p>
+                            </div>
+                            <div class="tarjeta_beneficios">
+                                <h2>02.</h2>
+                                <h3>Es tuya</h3>
+                                <p>Tienes el control sobre ella, puede añadir o quitar contenido cuando quieras.</p>
+                            </div>
+                        </div>
+                        <div class="fila">
+                            <div class="tarjeta_beneficios">
+                                <h2>03.</h2>
+                                <h3>Ventas</h3>
+                                <p>Una forma más de llegar a tus clientes y dar a conocer tus productos o servicios</p>
+                            </div>
+                            <div class="tarjeta_beneficios">
+                                <h2>04.</h2>
+                                <h3>Precio bajo</h3>
+                                <p>Al ser un diseño web menos complejo, estructurado sobre plantillas.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--<img src="../img/fondoInicio.png" alt="Imagen de fondo" class="background-image">-->
+        </section>
+        
+        <section class="caracteristicas_onePage">
+            <div class="container">
+               
+                <div class="row">
+                    <div class="col-6">
+                        <h2 class="tituloCaracteristicas">¿Qué características tiene?</h2>
+                        <p class="parrafoCaracteristicas">Nuestra página One Page está diseñada para impresionar desde el primer vistazo. Con una estructura simple y elegante, los visitantes pueden sumergirse en tu contenido sin perderse en menús complicados. Además, gracias a su diseño responsivo, tu página se verá increíble en cualquier dispositivo</p>
+                        <p class="parrafoCaracteristicas">¿Quieres que tus visitantes se conviertan en clientes? Con llamados a la acción estratégicamente ubicados, invitas a tus usuarios a interactuar de manera natural, convirtiendo las visitas en resultados tangibles.</p>
+                        <p class="parrafoCaracteristicas">Y lo mejor de todo, con una carga rápida, tus visitantes no tendrán que esperar para disfrutar de tu contenido.</p>
+                        
+                    </div>
+                    <div class="col-6 mt-3">
+                        <div class="cards">
+                            <div class="card_onePage">
+                                <h2>Fácil de usar</h2>
+                                <p>El usuario podrá navegar por ella desplazándose hacia arriba o hacia abajo, ¡no hay opción de perderse!</p>
+                            </div>
+                            <div class="card_onePage">
+                                <h2>Contenido</h2>
+                                <p>No necesitas grandes cantidades de texto, fotos u otros recursos para poder funcionar con esta página web.</p>
+                            </div>
+                            <div class="card_onePage">
+                                <h2>Historia</h2>
+                                <p>Este diseño web cuenta una historia de principio a fin, guiando al usuario por nuestro producto o servicio y acabando en tu contacto.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        
+        
+        
+       
+        <!--
+            <section class="contenido_dirigido">
+                <div class="cabecera_dirigido">
+                    <h1>A quién va dirigido</h1>
+                </div>
+                <div class="contenedor_dirigido-columnas">
+                    
+                    <div class="columna_dirigido">
+                        <div class="icono-texto">
+                            <img src="../img/local-search-svgrepo-com.svg" alt="Descripción del icono" style="width: 150px; height: 150px;">
+                            <p>Negocios locales</p>
+                        </div>
+                        
+                        <div class="icono-texto">
+                            <img src="../img/small-shop-svgrepo-com.svg" alt="Descripción del icono" style="width: 150px; height: 150px;">
+                            <p>Pequeños comercios</p>
+                        </div>
+                        
+                    </div>
+                    <div class="columna_dirigido">
+                        <img src="../img/location-tracking-animate (1).svg" alt="Descripción de la imagen">
+                    </div>
+                    <div class="columna_dirigido">
+                        <div class="icono-texto">
+                            <img src="../img/sale-svgrepo-com.svg" alt="Descripción del icono" style="width: 150px; height: 150px;">
+                            <p>Venta de servicios</p>
+                        </div>
+                        
+                        <div class="icono-texto">
+                            <img src="../img/star-unusual-special-unique-svgrepo-com.svg" alt="Descripción del icono" style="width: 150px; height: 150px;">
+                            <p>Producto único</p>
+                        </div>
+                        
+                    </div>
+                </div>
+                <img src="../img/fondoInicio.png" alt="Imagen de fondo" class="background-image">
+            </section>
+            -->
+            
+            <section class="contacto">
+                <div class="container-whatsapp fixed-bottom fixed-right">
+                    <div class="row justify-content-center">
+                        <div class="col-4 col-md-2">
+                            <a id="whatsapp" href="https://wa.me/+34618799536" target="_blank" onmouseover="showCustomTooltip()" onmouseout="hideCustomTooltip()">
+                                <img src="../img/whatsapp.svg" alt="WhatsApp">
+                            </a>
+                            <div id="custom-tooltip" style="visibility: hidden;">
+                                Contacta con nosotros
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="precios">
+                <div class="cabecera_diseno">
+                    <h1>Diseño Web One Page</h1>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6" id="colum-izquierda">
+                            <div class="casilla-servicios">
+                                <!-- Contenido de la casilla de servicios -->
+                                <h3>¿Qué incluye?</h3>
+                                <ul class="lista-caracteristicas">
+                                    <li><span class="visto">✔</span> Logo y colores del cliente</li>
+                                    <li><span class="visto">✔</span> Formulario de contacto</li>
+                                    <li><span class="visto">✔</span> Iconos de redes sociales</li>
+                                    <li><span class="visto">✔</span> Ubicación de Google maps</li>
+                                    <li><span class="visto">✔</span> Diseño adaptado a smartphones</li>
+                                    <li><span class="visto">✔</span> Optimización de hasta 10 imágenes</li>
+                                    <li><span class="visto">✔</span> Fácil gestión (WordPress)</li>
+                                    <li><span class="visto">✔</span> Entrega en 7 días laborables</li>
+                                    <li><span class="visto">✔</span> Aviso legal (no definitivo)</li>
+                                    <li><span class="visto">✔</span> A elegir varias plantillas</li>
+                                    <li><span class="visto">✔</span> Hasta 5 secciones </li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-6" id="colum-derecha">
+                            <div class="titulo-precios">
+                                <!-- Título de precios -->
+                                <h2>Que no incluye</h2>
+                            </div>
+                            <ul class="lista-caracteristicas">
+                                <li><span class="cruz">❌</span> Edición de imagenes</li>
+                                <li><span class="cruz">❌</span> Creación de Textos</li>
+                                <li><span class="cruz">❌</span> Diseño de logotipo</li>
+                                <li><span class="cruz">❌</span> Mantenimiento web</li>
+                                <li><span class="cruz">❌</span> Soporte técnico</li>
+                                <li><span class="cruz">❌</span> Servicio de hosting y dominio</li>
+                                
+                            </ul>
+                            <div class="contenedor-boton" style="padding: 0;">
+                                <button class="botonBeneficios">¿Cuanto pagarás por tu One Page? </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Contenedor de las cajas de precios -->
+                <div class="container_precios">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="caja-precio">
+                                <!-- Contenido de la primera caja de precios -->
+                                <img src="../img/website-designer-animate.svg" alt="Descripción de la imagen 1">
+                                <h2>Añadir una nueva sección</h2>
+                                <p>Creación de una nueva sección al diseño web One Page actual</p>
+                                <h3>30€</h3>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="caja-precio">
+                                <!-- Contenido de la segunda caja de precios -->
+                                <img src="../img/website-setup-animate.svg" alt="Descripción de la imagen 2">
+                                <h2>Mantenimiento & hosting</h2>
+                                <ul class="lista-caracteristicas_diseno">
+                                    <li><span class=""></span> Una modificación del contenido mensual</li>
+                                    <li><span class=""></span> Cuentas de correos ilimitados</li>
+                                    <li><span class=""></span> Actualización de plugins y WordPress</li>
+                                    <li><span class=""></span> Certificado de seguridad SSL</li>
+                                    <li><span class=""></span> Creación de una cuenta de correo</li>
+                                    <li><span class=""></span> Copias de seguridad mensuales</li>
+                                    
+                                </ul>
+                                <h3>38€<span> /Mes</span></h3>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="caja-precio">
+                                <!-- Contenido de la tercera caja de precios -->
+                                <img src="../img/creative-thinking-animate.svg" alt="Descripción de la imagen 3">
+                                <h2>Otros</h2>
+                                <p>Para cualquier cambio, creación o modificación, se realizara un presupuesto personalizado acorde a la petición</p>
+                                <h3>20€<span> /Hora</span></h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            
+            
+            <section class="preguntas">
+                <div class="faq">
+                    <h2>Preguntas frecuentes</h2>
+                    <ul class="pregunta">
+                      <li>
+                        <div class="question">
+                          <span class="toggle"></span> ¿Cómo trabajamos en WebVisionSeo?
+                        </div>
+                        <div class="answer">Nuestra metodología de trabajo compartida le permitirá ser el protagonista para la aprobación y el paso a siguientes fases, siempre contando con el asesoramiento de expertos en e-Commerce que le ayudarán y guiarán en todo momento para que sigas mejorando.
+                
+                           <br/><br/> Gracias a nuestro equipo de expertos con más de 10 años de experiencia, conseguiremos crear y preparar una tienda online profesional capaz de competir con las tiendas online de su sector.
+                            
+                            <br/><br/>Al inicio definimos sus requerimientos, en base a lo cual preparamos la arquitectura, el diseño y seleccionamos las tecnologías más adecuadas. Tendrá todos los detalles cuidadosamente documentados y anclado en la documentación del proyecto. En las fases individuales, le informaremos periódicamente sobre el avance del proyecto, para que usted tenga un control total sobre su avance.
+                            
+                            <br/><br/>Nos basamos en comunicación transparente, contratos claros, documentación bien definida, y en plazos de entrega firmes.
+                            
+                            <br/><br/>Para obtener más información sobre el proceso y las fases individuales, visite página de Procesos</div>
+                      </li>
+                      <li>
+                        <div class="question">
+                          <span class="toggle"></span> ¿Necesito tener un hosting antes de empezar?
+                        </div>
+                        <div class="answer">No, si no tiene un hosting, haremos todo el proceso de registración un hosting y dominio con usted.</div>
+                      </li>
+                      <li>
+                        <div class="question">
+                          <span class="toggle"></span> ¿Cómo puedo estar seguro de la calidad del trabajo?
+                        </div>
+                        <div class="answer" >Antes de empezar, le proporcionaremos la documentación detallada del proyecto con todos los detalles, para que pueda estar muy seguro del resultado.
+                
+                            <br/><br/>En nuestro equipo tenemos arquitectos, diseñadores, desarrolladores y testers experimentados, que van a ir muy profundo para analizar, disenar, desarrollar y verificar toda la funcionalidad, el diseño, la compatibilidad móvil y la velocidad de su sitio web.</div>
+                      </li>
+                      <li>
+                        <div class="question">
+                          <span class="toggle"></span> ¿tienen algunas referencias?
+                        </div>
+                        <div class="answer">Sí, por supuesto, somos una empresa profesional con 5 años de experiencia.
+                            Entre nuestros clientes son empresas medianas, grandes e internacionales.
+                            
+                          <br/><br/>  Sobre la calidad de nuestro trabajo se puede asegurar en la sección de proyectos realizados.</div>
+                      </li>
+                      <li>
+                        <div class="question">
+                          <span class="toggle"></span> ¿Se puede crear una web desde 0, sin utilizar un tema prediseñado de WordPress?
+                        </div>
+                        <div class="answer">Sí, por supuesto, para nuestros clientes estamos creando sitios web con y sin plantillas, desde 0.
+                            
+                            <br/><br/>Si necesita, nuestro equipo de diseñadores experimentados preparará un diseño profesional desde 0 y nuestro desarrollador convertirá este hermoso diseño en un gran sitio web.
+                            
+                            <br/><br/>Y si usted busca una solución más económica podemos utilizar uno de nuestros diseños pre-preparados.</div>
+                      </li>
+                      <li>
+                        <div class="question">
+                          <span class="toggle"></span> ¿Y la velocidad de la Web?
+                        </div>
+                        <div class="answer">Tenemos mucha experiencia en acelerar sitios web y todas nuestras webs construimos con las tecnologías más avanzadas, para garantizar la mejor velocidad de carga posible.
+                
+                           <br/><br/> Si usted tenga problema con la velocidad de su web actual, no dude ponerse en contacto con nosotros, con mucho gusto realizamos la analisis profunda de su web, tecnologías, plugins y disenamos la solucion para mejorar la velocidad de su web actual.</div>
+                      </li>
+                      <li>
+                        <div class="question">
+                          <span class="toggle"></span> ¿En que consiste el servicio de desarrollo e-commerce?
+                        </div>
+                        <div class="answer">Nuestras tiendas online están desarrolladas con una plataforma profesional que nos brinda la flexibilidad de adaptar y programar cualquier funcionalidad que necesites creando tiendas sin limitaciones para crecer.
+                
+                
+                            <br/><br/>Nuestros diseños se realizan a medida desde cero, tras escuchar las necesidades y realizar un estudio del sector del proyecto.
+                            
+                            
+                            <br/><br/>Realizamos un diseño moderno pero siempre cuidando los detalles de UX para facilitar la navegación, aumentar las conversiones y genera confianza a los clientes.
+                            
+                            <br/><br/>Todo estará adaptado para Dispositivos móviles, con lo cual diseñaremos todas las pantallas para Desktop (PC) / Tablet y Móvil.
+                            
+                            <br/><br/>A nuestros clientes ofrecemos tanto el servicio de desarrollo avanzado para gran empresas, como sitios web ecommerce básico, para las empresas que están en el proceso de creación. No dude ponerse en contacto con nuestros expertos para pedir más detalles.</div>
+                      </li>
+                      <li>
+                        <div class="question">
+                          <span class="toggle"></span> ¿Cuanto me costará ser visible en internet?
+                        </div>
+                        <div class="answer">Estamos especializados en el diseño y desarrollo de sitios web de alta calidad. Por lo tanto, no tenemos precios “únicos”, sino que calculamos el presupuesto en base a las necesidades y requerimientos del cliente.
+                
+                           <br/><br/> En general, podemos ofrecerle tres tarifas para desarrollar su sitio web, en base a sus necesidades puede elegir: Básico, Avanzado o Sitio web completamente diseñado a medida.
+                            
+                           <br/><br/>El presupuesto de su proyecto depende de sus necesidades y expectativas, así como de la complejidad de la web y de las tecnologías utilizadas.
+                            
+                           <br/><br/> No facturamos horas, sino proyectos completos. Así que el precio total del proyecto completo, así como el desglose detallado del precio se preparará y formará parte del contrato antes de que empecemos con la palabra.
+                            
+                           <br/><br/> Así puede estar seguro de los costes finales del trabajo incluso antes de que empecemos.
+                            
+                           <br/><br/>El pago se realiza en dos etapas: la primera a mitad del trabajo, para que pueda ver y estar seguro de la calidad antes de enviarnos el primer pago. La segunda parte se realiza cuando el proyecto está formalmente cerrado, revisado y confirmado por su parte.
+                            
+                            No dude en ponerse en contacto con uno de nuestros amables compañeros del departamento de ventas para conocer nuestros precios.</div>
+                      </li>
+                      <li>
+                        <div class="question">
+                          <span class="toggle"></span> ¿Necesito tener un hosting antes de empezar?
+                        </div>
+                        <div class="answer" >Explicación sobre los requisitos previos para comenzar un proyecto con nosotros.</div>
+                      </li>
+                      <li>
+                        <div class="question">
+                          <span class="toggle"></span> ¿Necesito tener un hosting antes de empezar?
+                        </div>
+                        <div class="answer" >Explicación sobre los requisitos previos para comenzar un proyecto con nosotros.</div>
+                      </li>
+                      <!-- Aquí van las demás preguntas y respuestas -->
+                    </ul>
+                  </div>
+                </section>   
+                <section class="formulario-contacto">
+                    <div class="tarjeta-contacto">
+                        <div class="contenido_formulario">
+                            <div class="informacion-contacto">
+                                <h2 style="color:mediumturquoise">Te asesoramos</h2>
+                                <p >Solo déjanos tu nombre y teléfono(opcional un horario)</p>
+                                <form action="https://formspree.io/f/mzbnkdze" method="POST" >
+                                    <input type="text" id="nombre" name="nombre" placeholder="Nombre y teléfono">
+                                    <br/>                  
+                                    <button class="buttonContacto" type="submit" >Enviar</button>
+                                </form>
+                                
+                                <p >Te proporcionamos más información, despejamos dudas y entendemos mejor la idea de tu negocio.</p>
+                            </div>
+                            <div class="contacto-info">
+                                <div class="contacto-item">
+                                    <i class="fas fa-phone" style="font-size: 80px; width: 83px;color:mediumturquoise"></i>                   
+                                </div>
+                                <span style="color:mediumturquoise">Teléfono: (123) 456-7890</span>
+                                <div class="contacto-item">
+                                    <i class="fas fa-envelope" style="font-size: 80px; width: 83px;color:mediumturquoise"></i>
+                                    
+                                </div>
+                                <span style="color:mediumturquoise">Correo: ejemplo@example.com</span>
+                               
+                                <div class="contacto-item">
+                                    <i class="fab fa-whatsapp" style="font-size: 80px; width: 83px;color:mediumturquoise"></i>
+                                    
+                                </div>
+                                <span style="color:mediumturquoise">WhatsApp: (123) 456-7890</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>   
+       
+        <footer>
+            <div class="container_footer">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h4>Site Map</h4>
+                        <ul>
+                            <li><a href="#">Inicio</a></li>
+                            <li class="submenu_footer">
+                                <a href="#">Páginas Web</a>
+                                <ul>
+                                    <li><a href="#">One Page</a></li>
+                                    <li><a href="#">Sitio Web</a></li>
+                                    <li><a href="#">Tienda en linea</a></li>
+                                   
+                                    <!-- Agrega más opciones si es necesario -->
+                                </ul>
+                            </li>
+                            <li><a href="#">Diseño Gráfico</a></li>
+                            <li><a href="#">Nosotros</a></li>
+                            <li><a href="#">Contacto</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <h4>Política de Privacidad</h4>
+                        <ul>
+                            <li><a href="#">Términos y Condiciones</a></li>
+                            <li><a href="#">Aviso Legal</a></li>
+                            <li><a href="#">Política de Cookies</a></li>
+                            <li><a href="#">Política de Privacidad</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <h4>Redes Sociales</h4>
+                        <ul>
+                            <li><a href="#">Facebook</a></li>
+                            <li><a href="#">Twitter</a></li>
+                            <li><a href="#">Instagram</a></li>
+                            <li><a href="#">LinkedIn</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+            
+        
+           
+        <script src="../script.js"></script>
+</body>
+</html>

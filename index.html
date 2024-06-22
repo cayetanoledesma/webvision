@@ -18,46 +18,55 @@
 
 <body>
     <div class="contenedor-total">   
-    <div class="contenedor-header">
-        <header>
-            <a href="index.html" onclick="seleccionar()">
-                <div class="logo">
-                    <img loading="lazy" src="img/WebVisionSeo.svg" alt="Diseño pagina web" >
+        <div class="contenedor-header">
+            <header>
+                <a href="index.html" onclick="seleccionar()">
+                    <div class="logo">
+                        <img loading="lazy" src="img/WebVisionSeo.svg" alt="Diseño pagina web">
+                    </div>
+                </a>
+                <nav id="nav">
+                    <ul>
+                        <li>
+                            <a href="index.html" onclick="seleccionar()">Inicio</a>
+                        </li>
+                        <li>
+                            <a href="#" onclick="toggleSubMenu(event, 'submenu')">Páginas Web<i class="fas fa-chevron-down" style="margin-left: 10px; font-size: 15px; vertical-align: middle;"></i></a>
+                            <!-- Submenu -->
+                            <ul id="submenu" onmouseenter="cancelarOcultarSubMenu()" onmouseleave="ocultarSubMenu()">
+                                <li><a href="PaginasWeb/OnePage.html">One Page</a></li>
+                                <li><a href="PaginasWeb/sitioWeb.html">Sitio Web </a></li>
+                                <li><a href="PaginasWeb/tiendaEnLinea.html">Tienda en Linea</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="disenoGrafico.html" onclick="seleccionar()">Diseño Gráfico</a>
+                        </li>
+                        <li>
+                            <a href="#" onclick="toggleSubMenu(event, 'submenu1')">Marketing Digital<i class="fas fa-chevron-down" style="margin-left: 10px; font-size: 15px; vertical-align: middle;"></i></a>
+                            <!-- Submenu -->
+                            <ul id="submenu1" onmouseenter="cancelarOcultarSubMenu1()" onmouseleave="ocultarSubMenu1()">
+                                <li><a href="Marketing/seo.html">Seo</a></li>
+                                <li><a href="marketing/redes.html">Redes Sociales</a></li>
+                                <li><a href="marketing/publicidad.html">Google Ads</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="paginas/nosotros.html" onclick="seleccionar()">Promociones</a>
+                        </li>
+                        <div class="botones-navegacion">
+                            <a href="paginas/contacto.html"><button class="botonnav1">Contacto</button></a>
+                        </div>                                       
+                    </ul>
+                </nav>
+                <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                    <i class="fa-solid fa-bars"></i>
                 </div>
-            </a>
-            <nav id="nav">
-                <ul>
-                    <li><a href="index.html" onclick="seleccionar()">Inicio</a></li>
-                    <li><a href="#" onmouseenter="mostrarSubMenu()" onmouseleave="ocultarSubMenu()">Páginas Web<i class="fas fa-chevron-down" style="margin-left: 10px; font-size: 15px; vertical-align: middle;"></i></a>
-                        <!-- Submenu -->
-                        <ul id="submenu" onmouseenter="cancelarOcultarSubMenu()" onmouseleave="ocultarSubMenu()">
-                            <li><a href="PaginasWeb/OnePage.html">One Page</a></li>
-                            <li><a href="PaginasWeb/sitioWeb.html">Sitio Web </a></li>
-                            <li><a href="PaginasWeb/tiendaEnLinea.html">Tienda en Linea</a></li>
-                            
-                        </ul>
-                    </li>
-                    <li><a href="disenoGrafico.html" onclick="seleccionar()">Diseño Gráfico</a></li>
-                    <li><a href="#" onmouseenter="mostrarSubMenu1()" onmouseleave="ocultarSubMenu1()">Marketing Digital<i class="fas fa-chevron-down" style="margin-left: 10px; font-size: 15px; vertical-align: middle;"></i></a>
-                        <!-- Submenu -->
-                        <ul id="submenu1" onmouseenter="cancelarOcultarSubMenu1()" onmouseleave="ocultarSubMenu1()">
-                            <li><a href="Marketing/seo.html">Seo</a></li>
-                            <li><a href="marketing/redes.html">Redes Sociales</a></li>
-                            <li><a href="marketing/publicidad.html">Google Ads</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="paginas/nosotros.html" onclick="seleccionar()">Promociones</a></li>
-                    <div class="botones-navegacion">
-                        <a href="paginas/contacto.html"><button class="botonnav1">Contacto</button></a>
-                    </div>                                       
-                </ul>
-            </nav>
-            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
-                <i class="fa-solid fa-bars"></i>
-            </div>
-        </header>
+            </header>
+        </div>
     </div>
-    </div>   
+    
+    
     
     
     <section class="inicio" id="inicio">

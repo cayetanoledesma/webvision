@@ -1,4 +1,70 @@
 
+let submenuTimer;
+let submenuTimer1;
+
+function mostrarSubMenu() {
+    clearTimeout(submenuTimer); // Cancela el temporizador si ya está en funcionamiento
+    document.getElementById("submenu").style.display = "block";
+}
+
+function ocultarSubMenu() {
+    // Configura un temporizador para ocultar el submenu después de un breve retraso
+    submenuTimer = setTimeout(() => {
+        document.getElementById("submenu").style.display = "none";
+    }, 500); // Ajusta el tiempo de espera aquí (en milisegundos)
+}
+
+function cancelarOcultarSubMenu() {
+    clearTimeout(submenuTimer); // Cancela el temporizador para que no se oculte el submenu
+}
+
+function mostrarSubMenu1() {
+    clearTimeout(submenuTimer1); // Cancela el temporizador si ya está en funcionamiento
+    document.getElementById("submenu1").style.display = "block";
+}
+
+function ocultarSubMenu1() {
+    // Configura un temporizador para ocultar el submenu después de un breve retraso
+    submenuTimer1 = setTimeout(() => {
+        document.getElementById("submenu1").style.display = "none";
+    }, 500); // Ajusta el tiempo de espera aquí (en milisegundos)
+}
+
+function cancelarOcultarSubMenu1() {
+    clearTimeout(submenuTimer1); // Cancela el temporizador para que no se oculte el submenu
+}
+
+function mostrarOcultarMenu() {
+    var nav = document.getElementById('nav').querySelector('ul');
+    nav.classList.toggle('show');
+    
+    // Verifica si el botón de cierre ya existe
+    if (!document.querySelector('.close-menu')) {
+        var closeButton = document.createElement('div');
+        closeButton.classList.add('close-menu');
+        closeButton.innerHTML = '&times;';
+        closeButton.onclick = function() {
+            nav.classList.remove('show');
+        };
+        nav.appendChild(closeButton);
+    }
+}
+
+function toggleSubMenu(event, submenuId) {
+    event.preventDefault();
+    var submenu = document.getElementById(submenuId);
+    if (submenu.style.display === "block") {
+        submenu.style.display = "none";
+    } else {
+        // Ocultar otros submenús abiertos
+        document.querySelectorAll('#nav ul ul').forEach(function(ul) {
+            ul.style.display = "none";
+        });
+        submenu.style.display = "block";
+    }
+}
+
+
 function generarContenidoHTML(claseCard) {
     switch (claseCard) {
         case 'one-page-card':
@@ -103,44 +169,7 @@ window.onload = function() {
         document.getElementById('custom-tooltip').style.visibility = 'hidden';
     }
 
-    let submenuTimer;
-
-function mostrarSubMenu() {
-    clearTimeout(submenuTimer); // Cancela el temporizador si ya está en funcionamiento
-    document.getElementById("submenu").style.display = "block";
-}
-
-function ocultarSubMenu() {
-    // Configura un temporizador para ocultar el submenu después de un breve retraso
-    submenuTimer = setTimeout(() => {
-        document.getElementById("submenu").style.display = "none";
-    }, 500); // Ajusta el tiempo de espera aquí (en milisegundos)
-}
-
-function cancelarOcultarSubMenu() {
-    clearTimeout(submenuTimer); // Cancela el temporizador para que no se oculte el submenu
-}
-
-
-
-
-let submenuTimer1;
-
-function mostrarSubMenu1() {
-    clearTimeout(submenuTimer1); // Cancela el temporizador si ya está en funcionamiento
-    document.getElementById("submenu1").style.display = "block";
-}
-
-function ocultarSubMenu1() {
-    // Configura un temporizador para ocultar el submenu después de un breve retraso
-    submenuTimer1 = setTimeout(() => {
-        document.getElementById("submenu1").style.display = "none";
-    }, 500); // Ajusta el tiempo de espera aquí (en milisegundos)
-}
-
-function cancelarOcultarSubMenu1() {
-    clearTimeout(submenuTimer1); // Cancela el temporizador para que no se oculte el submenu
-}
+  
 
 
 
@@ -290,3 +319,4 @@ AOS.init({
     duration: 1000, // Duración del efecto en milisegundos
     once: false, // Permitir que las animaciones ocurran más de una vez
 });
+
